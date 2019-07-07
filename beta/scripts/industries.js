@@ -5,7 +5,7 @@ choix_1.addEventListener('click', (e) => {
     industrie: 'on_demand',
     utilisateur: firebase.auth().currentUser.uid
   }).then(() => {
-    window.location = "file:///Users/michaelmdawant/Documents/Vespucci/Code/Vespucci_Web_Admin/Vespucci_Web_Admin/industries.html#";
+    window.location = "https://vespuccianalytics.com/beta/dashboard/";
 
   }).catch(err => {
     console.log(err.message);
@@ -19,7 +19,7 @@ choix_2.addEventListener('click', (e) => {
     industrie: 'ecommerce',
     utilisateur: firebase.auth().currentUser.uid
   }).then(() => {
-    window.location = "file:///Users/michaelmdawant/Documents/Vespucci/Code/Vespucci_Web_Admin/Vespucci_Web_Admin/industries.html#";
+    window.location = "https://vespuccianalytics.com/beta/dashboard/";
 
   }).catch(err => {
     console.log(err.message);
@@ -33,7 +33,7 @@ choix_3.addEventListener('click', (e) => {
     industrie: 'news',
     utilisateur: firebase.auth().currentUser.uid
   }).then(() => {
-    window.location = "file:///Users/michaelmdawant/Documents/Vespucci/Code/Vespucci_Web_Admin/Vespucci_Web_Admin/industries.html#";
+    window.location = "https://vespuccianalytics.com/beta/dashboard/";
 
   }).catch(err => {
     console.log(err.message);
@@ -47,7 +47,7 @@ choix_4.addEventListener('click', (e) => {
     industrie: 'other',
     utilisateur: firebase.auth().currentUser.uid
   }).then(() => {
-    window.location = "file:///Users/michaelmdawant/Documents/Vespucci/Code/Vespucci_Web_Admin/Vespucci_Web_Admin/industries.html#";
+    window.location = "https://vespuccianalytics.com/beta/dashboard/";
 
   }).catch(err => {
     console.log(err.message);

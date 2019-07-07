@@ -28,7 +28,7 @@ signupForm.addEventListener('submit', (e) => {
       company: company,
       utilisateur: firebase.auth().currentUser.uid
     }).then(() => {
-      window.location = "file:///Users/michaelmdawant/Documents/Vespucci/Code/Vespucci_Web_Admin/Vespucci_Web_Admin/industries.html#";
+      window.location = "https://vespuccianalytics.com/beta/industries/";
   
     }).catch(err => {
       console.log(err.message);
