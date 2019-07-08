@@ -6,7 +6,6 @@
 
   } else {
     console.log('user logged out');
-    window.location = "https://vespuccianalytics.com/beta/";
 
 
   }
