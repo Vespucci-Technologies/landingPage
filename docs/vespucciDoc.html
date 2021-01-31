@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>Vespucci - Docs</title>
+
+    <!-- Styles -->
+    <link href="../assets/css/page.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro">    
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+    <link rel="icon" href="../assets/img/favicon.png">
+  </head>
+
+  <body data-spy="scroll" data-target=".nav-sidebar" data-offset="100">
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-stick-light" data-navbar="sticky">
+      <div class="container">
+
+        <div class="navbar-left">
+          <button class="navbar-toggler" type="button">&#9776;</button>
+          <a class="navbar-brand" href="../index.html">
+            <img class="logo-dark" src="img/logo-dark.png" alt="logo">
+            <img class="logo-light" src="img/logo-light.png" alt="logo">
+          </a>
+        </div>
+
+        <section class="navbar-mobile">
+          <span class="navbar-divider d-mobile-none"></span>
+
+          <nav class="nav nav-navbar">
+            <a style="color:white" class="nav-link" href="../index.html">Technologies</a>
+            <a style="color:white" class="nav-link" href="../index.html">Get Vespucci</a>
+            <a style="color:white"class="nav-link" href="#">Docs</a>
+            <a style="color:white" class="nav-link" href="../changelog/changelog.html">Changelog</a>
+          </nav>
+        </section>
+
+        <a  style="font-family: 'Source Sans Pro'" class="button-navBar" href="https://dashboard.vespuccianalytics.com">Dashboard</a>
+
+      </div>
+    </nav><!-- /.navbar -->
+
+    
+    
+
+  
+    <!-- Header -->
+    <header class="header text-white bg-dark pt-9 pb-5" style="background-image: linear-gradient(-45deg, #1D2A4A 0%, #516276 100%);">
+      <div class="container">
+        <h3>Vespucci Documentation</h3>
+      </div>
+    </header><!-- /.header -->
+
+
+
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="container">
+        <div class="row">
+
+
+          <!--
+          |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+          | Sidebar
+          |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+          !-->
+          <div class="col-md-4 col-xl-3">
+            <aside class="sidebar sidebar-expand-md sidebar-sticky pr-md-4 br-1">
+              <div class="sidebar-body">
+                <ul class="nav nav-sidebar nav-sidebar-hero nav-sidebar-pill">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#get-started">Getting started <i class="nav-angle"></i></a>
+                    <div class="nav">
+                      <a class="nav-link" href="#intro">Introduction</a>
+                    </div>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#layout">Integration <i class="nav-angle"></i></a>
+                    <div class="nav">
+                      <a class="nav-link" href="#integration">How to integrate ?</a>
+                      <a class="nav-link" href="#project">Project</a>
+                      <a class="nav-link" href="#datapipe">DataPipe</a>
+                      <a class="nav-link" href="#context">Project Context</a>
+                      <a class="nav-link" href="#datalayers">DataLayer</a>
+
+                    </div>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="#datalayerAPI">DataLayers API <i class="nav-angle"></i></a>
+                    <div class="nav">
+                      <a class="nav-link" href="#APIStarted">Getting started</a>
+                      <a class="nav-link" href="#iOSAPI">iOS API</a>
+                      <a class="nav-link" href="#AndroidAPI">Android API</a>
+                      <a class="nav-link" href="#react">ReactNative API</a>
+
+                    </div>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#vespucciMac">Vespucci for Mac <i class="nav-angle"></i></a>
+                    <div class="nav">
+                      <a class="nav-link" href="#installation">Installation</a>
+                      <a class="nav-link" href="#datasync">DataSync</a>
+                      <a class="nav-link" href="#stories">Stories</a>
+                      <a class="nav-link" href="#storyfinder">StoryFinder</a>
+                      <a class="nav-link" href="#dimensions">Dimensions</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+
+
+          <!--
+          |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+          | Content
+          |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+          !-->
+          <div class="col-md-7 col-xl-8 ml-md-auto py-8">
+            <h2 id="get-started">Getting started</h2>
+            <p class="lead-2">Thank you very much for choosing Vespucci ! Vespucci offers a new approach to data analysis in which statistical models test hypotheses for you that you may not have thought of.</p>
+            
+            <img src="img/vespucciHeroBanner.png" alt="Vespucci Advanced Techs" width="950oh" height="600">
+
+
+            <hr class="hr-dash my-7">
+
+
+            <h3 id="intro">Introduction</h3>
+            <p>Vespucci is a native application for Mac. Choosing a native application allows us to do everything from relying on your Mac's GPU and Metal API to perform probabilistic calculations to exploiting the powerful neural network of Apple Silicon Macs for our machine learning systems. This application processes usage data from your mobile app. We refer to your mobile app(s) as "integrations". This documentation is divided into two main sections. The first one guides you to configure an integration to connect your app with Vespucci. The second section provides a quick introduction to Vespucci, the software to run on your Mac.</p>
+
+            <hr class="hr-dash my-7">
+
+            <!--
+            |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+            | Integration
+            |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+            !-->
+            <h2 id="integration">Integration</h2>
+            <p class="lead-2">When we designed Vespucci, we had two constraints in mind: the first was ease of integration. We know that integrating our solution into your products can be seen a very significant non-monetary cost. We worked hard to minimise this cost as much as we could. The second constraint is the transparency of the integration. You entrust us with usage data that is considered increasingly sensitive. You no longer want to deal with black boxes. You want to know what usage data is being retrieved and where it is being sent. Thus we have designed a modular and transparent integration system. You are in the driver seat and you have a hand on key choices at each step of the integration. At the same time, we have designed the process and build virtual assistants to make this process as smooth as possible. Let’s get started !</p>
+
+            <hr class="hr-dash my-7">
+
+            <h3 id="navbar">How to integrate your App with Vespucci ?</h3>            
+            <p>We have broken down the integration of Vespucci into your App into four key steps. It sounds long and tedious but in reality it is quite fast and the configuration wizards built into the dashboard automate many of the steps described in this document.</p>
+            <img src="img/10.png" alt="Vespucci Advanced Techs" width="950oh" height="600">
+            
+            <p>Let's first make a short summary of these steps before describing them in more detail. It always helps to know where you set foot, doesn't it ? Let's start with the blocks "Project" and "DataPipe". The project is a direct analogy of your app. The "DataPipe" is the "pipe" through which you will send your project data (i.e. from your app) to the Vespucci servers. These two steps do not really imply any configuration. They are mainly related to your development environment and your data extraction policy. We propose to start the configuration of Vespucci by first looking at these two elements because the configuration of the last two steps depend on them. The project context consists in specifying to Vespucci the context data (ip address, device manufacturer) that you want to collect by operating Vespucci within your app. Don't panic, this step is fully automated and after configuration, Vespucci will automatically generate a file in the programming language of your choice that you will just have to drag and drop into your favourite IDE. Finally, the last step, probably the most tedious, consists of copying and pasting a line of code into each of the views of your application, allowing you to carry out the actual tracking. You are invited to associate to this tracking what we call "UX DNA" which corresponds to interface elements of your app on which you wish to investigate. </p>
+            
+            <br/>
+            <h3 id="project">1. Create a Project.</h3>
+            <p>A Project must be assimilated to a mobile app or a website on a given platform. Currently, Vespucci allows the creation of projects on the following platforms:</p>
+            
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Platform</th>
+                  <th>Languages Supported</th>
+                  <th>Minimum OS Version</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>iOS</td>
+                  <td>Swift, Objective-C</td>
+                  <td>iOS 12</td>
+                </tr>
+                <tr>
+                  <td>Android</td>
+                  <td>Java, Kotlin </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>React Native</td>
+                  <td>JavaScript</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <p>To create a project go to the dashboard. You can open the dashboard simply by clicking on the button below. If you don't have a Vespucci user account yet, simply click on "Signup now" at the bottom of the login window. After creating your user account, a wizard will guide you through the creation of your first project.</p>
+
+            <button style="background-image: linear-gradient(-45deg, #3230B3 0%, #8132E3 100%); border: none;" onclick="location.href='http://dashboard.vespuccianalytics.com'" type="button" class="btn btn-primary btn-xs">Open the Dashboard</button>
+            <br/>
+            <br/>
+
+            <p>If you already have a Vespucci user account, you can log in and create a new project using the "Your Active Projects" section as shown in the screenshot below. </p>
+            <img src="img/11.png" alt="Vespucci Advanced Techs" width="850oh" height="600">
+            <br/>
+
+            <h3 id="datapipe">2. Choose a DataPipe.</h3>
+            <p>The DataPipes allows you to send your app data (the context of your project and your DataLayers as we will have the opportunity to see it) to our servers. We offer different methods of integration. Some offer you complete control over the data packets sent and network exchanges, while others offer a more integrated experience.</p>
+            <p>Currently we offer three families of DataPipes: 
+            (i) Our API which allows a totally transparent integration while remaining simple and easy to integrate into your app.
+            (ii) Segment that allows you to capitalize on your existing data and offers a three-click deployment. 
+            (iii) Our SDKs, mainly reserved for e-commerce solutions, which allows fully automated installation and deployment. </p>
+            <p>Let’s see how they compare:</p>
+            
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>DataPush API</th>
+                  <th>Segment</th>
+                  <th>DataPush SDK</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Project Context</td>
+                  <td>✅</td>
+                  <td>❌</td>
+                  <td>❌</td>
+                </tr>
+                <tr>
+                  <td>DataLayers</td>
+                  <td>✅</td>
+                  <td>Tracks & Views</td>
+                  <td>Automatic</td>
+
+                </tr>
+                <tr>
+                  <td>UXDNA</td>
+                  <td>✅</td>
+                  <td>✅</td>
+                  <td>✅</td>
+                </tr>
+                <tr>
+                  <td>Supported Projects</td>
+                  <td>iOS, Android, React Native</td>
+                  <td>iOS, Android, React Native</td>
+                  <td>e-Commerce</td>
+                </tr>
+              </tbody>
+            </table>
+            <br/>
+            <h3 id="context">3. Configure the Project Context.</h3>
+            <p>The Project Context is a set of metadata allowing to contextualise your user's experience such as her geographical position, the configuration of her device... These metadata are automatically retrieved by Vespucci without any additional configuration from your side. As we promised you, you stay in control. You choose what context information you share. Let us show you how it works:</p>
+
+            <p>To configure the context of your project, go to the Dashboard and click on "Connect" in the upper frame called "DataPush API". </p>
+            
+            <button style="background-image: linear-gradient(-45deg, #3230B3 0%, #8132E3 100%); border: none;" onclick="location.href='http://dashboard.vespuccianalytics.com'" type="button" class="btn btn-primary btn-xs">Open the Dashboard</button>
+            <br/>
+            <br/>
+            <img src="img/12.png" alt="Vespucci Advanced Techs" width="850oh" height="600">
+            <p>This will reveal a window inviting you to configure the context of one of your projects. First select the project for which you want to configure the context using the ad-hoc menu. You are then prompted to enter the bundle-id of your app. Then you can select the data that Vespucci will collect from your customers' devices. Please note that the configuration you make is by no means irreversible. After configuration, the dashboard produces a helper file in the programming language you specify. You must add this file to your preferred IDE. With the exception of react-native projects which require the import of two external libraries, Android or iOS projects do not require any other dependencies than the file produced by the dashboard.</p>
+            <br/>
+            <h3 id="datalayers">4. Create DataLayers.</h3>
+            <p>DataLayers consist of a line of code that you must add to each view of your App. 
+              You can also add additional DataLayers to track a specific action (e.g. add an item to your favourites...). Then we invite you to graft to each of these layers what we call "UXDNA" pieces. These represent elements of the experience, of the content of the product on which you would like to be able to investigate.</p>
+              
+              <p>Conceptually, DataLayers are very similar to what other platforms offer in terms of tracking. See below an example between Vespucci and Google Firebase.</p>
+              
+              <i>Tracking the addition of an image from the gallery in Firebase</i>
+              <pre><code class="language-swift">Analytics.logEvent("share_image", parameters: ["name": name as NSObject,"full_text": text as NSObject])
+              </code></pre>
+              
+              <i>Tracking the addition of an image from the gallery in Vespucci</i>
+            
+              <pre><code class="language-swift">vespucciTools.sendTrackEvent(eventName: "share_image.", eventProperties: ["name":self.name,"full_text":self.text ])
+              </code></pre>
+              
+              <p>If you use Segment or one of our SDKs you do not have to create DataLayers. These correspond to the tracks and views that you have defined in Segment or are generated automatically (in the case of the SDK). If you use our API, you have to create the DataLayers manually and copy and paste a snippet of code on each of your views.</p>
+              
+              <img src="img/13.png" alt="Vespucci Advanced Techs" width="850oh" height="600">
+              
+              <p>The Dashboard is the best place to perform this task. However, if you would like to get an overview of the implementation you need to do without having to connect to the Dashboard you can consult the following documentation:</p>
+
+            <hr class="hr-dash my-7">
+            
+            <!--
+              |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+              | DataLayers API
+              |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+            !-->
+            <h2 id="datalayerAPI">DataLayers API</h2>
+            <h3 id="APIStarted">Getting started</h3>
+
+            <p>The acquisition of data from your Apps (your projects) is done by means of a "vehicle" that we have called DataLayer. Conceptually, a DataLayer corresponds to a user behavior that you would like to investigate. Depending on the observed behavior, different types of DataLayers can be mobilized.</p>
+            <br/>
+            
+            <img src="img/14.png" alt="Vespucci Advanced Techs" width="950oh" height="600">
+
+            <br/>
+            <br/>
+            <p>- The layers of the Screen class allow to observe the user's path within the customer's app. They also allow you to measure the commitment associated with a particular screen.</p>
+            
+            <p>- The layers of the Action class allow to observe specific and punctual actions triggered by your users (e.g adding a recipe to the favorites, adding an item to the shopping cart...).</p>
+            
+            <p>In addition, you can attach "DNA" to your Layers. This DNA corresponds to content elements displayed on the screen for which you would like to test the impact in terms of user experience. This "DNA" is at the heart of the Vespucci experience. Our statistical models will use them as variables to determine if they are the cause of a behaviour you specify. Don't be stingy with DNA, add as much as you can even if they seem incongruous at first glance. This is a different approach to that recommended by many other analytical tools but our tool is different in its design. </p>
+            
+            <p>Some Layers have to be configured in a project to allow Vespucci to work properly.</p>
+            
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Layer</th>
+                  <th>Kind</th>
+                  <th>Mandatory</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Application Opened</td>
+                  <td>Action</td>
+                  <td>✅</td>
+                </tr>
+                <tr>
+                  <td>Application Closed</td>
+                  <td>Action </td>
+                  <td>✅</td>
+                </tr>
+                <tr>
+                  <td>View Controller</td>
+                  <td>Screen</td>
+                  <td>✅</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <hr class="hr-dash my-7">
+
+            <h3 id="iOSAPI">iOS API</h3>
+            
+            <h4>1. Initial Configuration.</h2>
+
+            <b>1.1 Track the App opening and closing</b><br/>
+            <i>If you don't have an Application Scene Manifest in you Info.plist</i> <br/>  
+            <p>Go to your AppDelegate.swift file and copy paste the following code in the application didFinishLaunchingWithOptions and applicationWillResignActive methods. </p>            
+            <pre id="highlighter" class="line-numbers" data-line="5,12"><code class="language-swift">func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool { 
+// Override point for customization after application launch.
+          
+//Vespucci Action Open Event.
+vespucciTools.sendTrackEvent(eventName: "Application Opened", eventProperties: [:])
+          
+return true
+}
+
+func applicationWillResignActive(_ application: UIApplication) {
+//Vespucci Track Close Event.
+vespucciTools.sendTrackEvent(eventName: "Application Backgrounded", eventProperties: [:])
+}</code></pre>
+
+          <i>If you do have an Application Scene Manifest in you Info.plist</i><br/> 
+          <p>Go to your AppDelegate.swift file and copy paste the following code in the application didFinishLaunchingWithOptions method. </p> 
+          <pre id="highlighter" class="line-numbers" data-line="5"><code class="language-swift">func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool { 
+// Override point for customization after application launch.
+                      
+//Vespucci Action Open Event.
+vespucciTools.sendTrackEvent(eventName: "Application Opened", eventProperties: [:])
+                      
+return true
+}</code></pre>
+<p>Go to the SceneDelegate.swift file of your App and add the following code: </p> 
+<pre id="highlighter" class="line-numbers" data-line="5"><code class="language-swift">func sceneDidEnterBackground(_ scene: UIScene) {
+  // Called as the scene transitions from the foreground to the background.
+  // Use this method to save data, release shared resources, and store enough scene-specific state information
+  // to restore the scene back to its current state.
+  vespucciTools.sendTrackEvent(eventName: "Application Backgrounded", eventProperties: [:])
+}</code></pre>
+
+<b>1.2 Track each of your ViewController</b><br/>
+<p>Please copy this code on all your views. Not the majority or almost all of them. All of them. It's going to be tedious but you won't regret the result 😊.</p>
+<pre id="highlighter" class="line-numbers" data-line="6"><code class="language-swift">override func viewDidLoad() {
+super.viewDidLoad()
+
+// Do any additional setup after loading the view.
+let priceValue = 30
+vespucciTools.sendViewEvent(viewName:"ProductView", viewProperties:["price":priceValue])
+}</code></pre>
+
+<h4>2. Track additional Actions.</h2>
+<p>You can track user-triggered events, such as adding an item to favorites, just like that:</p>
+
+<pre><code class="language-swift">vespucciTools.sendTrackEvent(eventName: "Likes.", eventProperties: ["likes":self.likesCount ])</code></pre>
+
+            <hr class="hr-dash my-7">
+
+            <h3 id="AndroidAPI">Android API</h3>
+            <h4>1. Initial Configuration.</h2>
+            <b>1.1 Track the App opening</b><br/>
+            <p>Please add the following code in your application file.</p>
+            <pre id="highlighter" class="line-numbers" data-line="10-20"><code class="language-java">public class AppDemo extends Application {
+              // Called when the application is starting, before any other application objects have been created.
+              // Overriding this method is totally optional!
+              @Override
+              public void onCreate() {
+                  super.onCreate();
+                  // Required initialization logic here!
+            
+                  vespucciTools.sendTrackEvent("Application Opened", null);
+                  registerActivityLifecycleCallbacks(new vespucciTools());
+            
+              }
+            
+              // This is called when the overall system is running low on memory,
+              // and would like actively running processes to tighten their belts.
+              // Overriding this method is totally optional!
+              @Override
+              public void onLowMemory() {
+                  super.onLowMemory();
+              }
+            }</code></pre>
+            
+            <b>1.2 Track each of your Activities</b><br/>
+            <p>Please copy this code on all your activities. Not the majority or almost all of them. All of them. It's going to be tedious but you won't regret the result 😊.</p>
+            <pre id="highlighter" class="line-numbers" data-line="10-20"><code class="language-java">@Override
+              protected void onCreate(Bundle savedInstanceState) {
+                  super.onCreate(savedInstanceState);
+              
+                  int priceValue = 30;
+                  String categoryValue = "Italian";
+              
+                  //Code related to the integration of Vespucci.
+                  //Creation of the object containing the interface elements to be analyzed.
+                  JSONObject vespucciData = new JSONObject();
+                  try {
+                      vespucciData.put("price", priceValue);
+                      vespucciData.put("category", categoryValue);
+              
+                  } catch (JSONException e) {
+                      e.printStackTrace();
+                  }
+              
+                  //Sending information to Vespucci.
+                  vespucciTools.sendViewEvent("Product View", vespucciData);
+              
+                  setContentView(R.layout.activity_main);
+                  Toolbar toolbar = findViewById(R.id.toolbar);
+                  setSupportActionBar(toolbar);
+              }</code></pre>  
+            
+            <h4>2. Track additional Actions.</h2>
+            <p>You can track user-triggered events, such as adding an item to favorites, just like that:</p>
+            
+            <pre><code class="language-java">JSONObject vespucciData = new JSONObject();
+              try {
+                vespucciData.put("Likes", likeCount);
+            
+              } catch (JSONException e) {
+                e.printStackTrace();
+              }
+            
+            vespucciTools.sendTrackEvent("Likes", vespucciData);</code></pre>
+
+            <hr class="hr-dash my-7">
+          
+             <h3 id="react">ReactNative API</h3>
+            <h4>1. Initial Configuration.</h2>
+
+            <b>1.1 Track the App opening and closing</b><br/>
+            <p>Please add the following code to your index.js file. </p>            
+            <pre><code class="language-javascript">AppState.addEventListener('change', state => {
+  if (state === 'active') {
+    sendTrackEvent("Application Opened", {});
+  } else if (state === 'inactive') {
+    sendTrackEvent("Application Backgrounded", {});
+  }
+});</code></pre>
+
+<b>1.2 Track each of your Screens</b><br/>
+<p>Please copy this code on all your screens. Not the majority or almost all of them. All of them. It's going to be tedious but you won't regret the result 😊.</p>
+<pre><code class="language-javascript">sendViewEvent("product", {price : 100, category: "food"});</code></pre>
+
+<h4>2. Track additional Actions.</h2>
+<p>You can track user-triggered events, such as adding an item to favorites, just like that:</p>
+
+<pre><code class="language-javascript">onPress={() => sendTrackEvent("menuClicked", {menu_id: 12, text: "products"})}</code></pre>
+
+
+<hr class="hr-dash my-7">
+
+            <!--
+            |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+            | Vespucci for Mac
+            |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+            !-->
+            <h2 id="vespucciMac">Vespucci for Mac</h2>
+            <p class="lead-2">When we designed Vespucci, we had two constraints in mind: the first was ease of integration. We know that integrating our solution into your products can be seen a very significant non-monetary cost. We worked hard to minimise this cost as much as we could. The second constraint is the transparency of the integration. You entrust us with usage data that is considered increasingly sensitive. You no longer want to deal with black boxes. You want to know what usage data is being retrieved and where it is being sent. Thus we have designed a modular and transparent integration system. You are in the driver seat and you have a hand on key choices at each step of the integration. At the same time, we have designed the process and build virtual assistants to make this process as smooth as possible. Let’s get started !</p>
+            <hr class="hr-dash my-7">
+
+
+            <h3 id="installation">Installation</h3>
+            <p></p>
+            <hr class="hr-dash my-7">
+
+
+            <h3 id="datasync">DataSync</h3>
+            
+            <p class="lead">In order to perform statistical analysis on large datasets, Vespucci replicates some information from our servers on your Mac. This information comes from your app data usage. It is constantly evolving. Therefore, you need to regularly synchronize Vespucci with our servers to keep the data on which Vespucci builds its models and analyses up to date.</p>
+            <hr class="my-6">
+            <h4>Initial configuration</h4>
+            <p>When using Vespucci on a new Mac, or if you use Vespucci after logging out, the Sync Wizard helps you specify which usage data to bring back to your Mac. Several cases are possible:</p>
+            <h4>No usage data on your Mac.</h2>
+            <p>If Vespucci does not find usage data on your Mac's hard drive, it will prompt you to build a new local database. You can choose to build this database as a replica of the usage data contained on our servers from a given date. 
+              You can also choose not to retrieve any data from our servers and create a "blank" database that will be fulfill with usage data from after the configuration.</p>
+           <img src="img/02.png" alt="Vespucci Advanced Techs" width="850oh" height="600">
+
+            <h4>Data already exists on your Mac.</h2>
+            <p>If Vespucci finds usage data on your Mac's hard drive, it will ask you to keep it as a basis for future analysis.</p>
+            <p>You can choose to keep the pre-existing data. In this case, the data configuration wizard will prompt you to repatriate on your Mac the usage data produced after the pre-existing data. You will have the option of importing all of those data or only the data produced within a time range that you can set.</p>
+            <img src="img/03.png" alt="Vespucci Advanced Techs" width="850oh" height="600">
+            <p>You can also choose not to keep this data and set up a blank database. The latter case was explained in section "no usage data".</p>
+            <img src="img/04.png" alt="Vespucci Advanced Techs" width="850oh" height="600">
+            
+            <h4>Keep your data up-to-date.</h2>
+            <p>When using Vespucci, it is important to keep your data up to date. To retrieve all usage data generated since your last synchronization, simply click on the central item in the toolbar called "Tap to Sync Vespucci". This item also shows the date and time of your last synchronisation operation, the date and time from which the new data will be retrieved..</p>
+            <img src="img/05.png" alt="Vespucci Advanced Techs" width="850oh" height="600">
+
+            <hr class="hr-dash my-7">
+
+            <h3 id="stories">Stories</h3>
+            
+            <p class="lead">Stories are at the heart of the Vespucci experience. They allow you to describe a user behaviour that you will then visualize through dimensions (such as time, geographical location of your users, ...).</p>
+            <hr class="my-6">
+            <h4>What's a Data Story ?</h4>
+            <i>If you develop a meal delivery app you could write the following story: users who placed an order after observing a positive customer review. You will then probably be interested in visualising the geographical areas in which such behaviour is most frequent. This is the role of dimensions. To learn more about dimensions, see the dedicated section.</i>
+            <br/>
+            <br/>
+            <h4>Create a Story.</h2>
+            <p>To start writing your story, simply click on "Create a Story". In the Lab subscription plan, you can create up to 10 different stories. It can be very handy to have different stories available. For example, you can assign a user behaviour of interest to a story so that you can present it later, for example at a meeting.</p>
+           <img src="img/06.png" alt="Vespucci Advanced Techs" width="850oh" height="600">
+
+            <h4>The Story Editor.</h2>
+            <p>The opening of a story initiates the story editor. The upper part of the story editor allows you to define your story as the active story, i.e. the one you will view through the dimensions. The lower part of the story editor allows you to configure your story itself.</p>
+
+            <img src="img/07.png" alt="Vespucci Advanced Techs" width="850oh" height="600">
+            <p>A story is built around four functional blocks:</p>
+            <b>(i) User behaviour</b>
+            <p>The first two (the cyan blue) blocks invite you to specify the behaviour you would like to observe. This is a kind of description of what you would observe on a video recording. <br/>
+              
+              You may be interested in a specific user experience. In this case, select the option "A Given Journey" in the first block. In the second block, Vespucci will then present you with a list of all the Views or Screens from Segment and invite you to describe the transition from one view to another.  <br/>
+              
+              You may also be interested in a specific action. In this case, select the option "A Given Action" in the first block. In the second block, Vespucci will then present you with a list of all "Track" objects from Segment and invite you to select one of them.
+              </p>
+            <b>(ii) Behaviour Determinant</b>
+            <p>The last two blocks are concerned with the determinant (the "driver") of the user behaviour that you have specified through the first two blocks. This involves specifying the content experienced by users adopting the target behaviour.
+              <br/>
+              To do this, the third block lists all the content showed in the target view.</p>
+              <i>If you are a Segment or an API user, these content elements correspond to the properties of your views and screens. We therefore invite you to fill in and track as many elements as possible in the properties of your views. If you are using the Vespucci SDK, these content correspond to all the elements that make up the user interface and are automatically tracked by Vespucci.</i>
+              <br/><br/>
+              <i>If you are using the Vespucci SDK, these content correspond to all the elements that make up the user interface and are automatically tracked by Vespucci.</i><br/><br/>
+              <p>The fourth block allows you to specify the value taken by the contents you selected in block 3.
+                When you watched video recordings, identifying content that was the source of a behaviour of interest was relatively easy: you could simply watch the films to identify behaviours that you might not have anticipated yourself. So the editor of our delivery app might be surprised to find that almost no user placed an order when the displayed price was less than 6€.
+                Without videos, you have to rely again on your personal intuition to identify the content behind a certain action. This is a problem because you can't think of everything. That's why the story editor relies on the StoryFinder. The StoryFinder suggests stories you might not have anticipated.
+                </p>
+
+            <hr class="hr-dash my-7">
+
+            <h3 id="storyfinder">StoryFinder</h3>
+            <p class="lead">The StoryFinder uses statistical models to help you identify content of interest. In other words, the StoryFinder helps you complete the third and fourth blocks of the story editor. The StoryFinder can be accessed from the toolbar using the "f(x)" icon. You can also reveal the StoryFinder from the main view by dragging with two fingers on your trackpad or magic mouse.</p><br/>
+            <p>The StoryFinder is divided into two sections. The first one helps you to identify the content (block 3) likely to influence the described behaviour while the second one helps you to specify the value taken by this content element (block 4).</p>
+            <hr class="my-6">
+
+            <h4>Behavioural driver</h2>
+            <p>The first section of the StoryFinder lists all content that may influence the described behaviour. For each of these content, our models assign a coefficient. The higher the coefficient, the more likely it is that this element will explain the described behaviour.</p>
+           <img src="img/08.png" alt="Vespucci Advanced Techs" width="850oh" height="600">
+
+            <h4>Content Values</h2>
+            <p>The second section of the StoryFinder presents the values taken by the elements listed in the first section of the StoryFinder. It is organised in three frames. The first frame presents the probability of performing the target action knowing the different values taken by the content item. <br/>
+              The second frame presents the time spent by the user on the original view knowing the different values taken by the content item.
+              The third frame presents the path adopted by the user in your app according to the different values taken by the content item.</p>
+              <img src="img/09.png" alt="Vespucci Advanced Techs" width="850oh" height="600">
+            <hr class="hr-dash my-7">
+            <h3 id="dimensions">Dimensions</h3>
+          </div>
+
+        </div>
+      </div>
+    </main><!-- /.main-content -->
+    
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row gap-y align-items-center">
+          <div class="col-12 col-lg-12">
+            <a class="button-navBar" style="width:140px; font-family: 'Source Sans Pro'; color:white; float: left;" href="mailto:info@amerigotechnology.com?subject=Contact Vespucci">Contact-Us</a><br/><br  />
+            <p style="font-size:10px; float: left;">Copyright © 2021  Amerigo Technology B.V.  All rights reserved.  Apple, iPhone, MacBook Pro are trademarks of Apple Inc.  All rights reserved.</p>
+          </div>
+          </div>
+        </div>
+
+      </div>
+    </footer><!-- /.footer -->
+
+
+
+
+
+    <!-- Scripts -->
+    <script src="../assets/js/page.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+
+  </body>
+</html>
