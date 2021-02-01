@@ -156,7 +156,7 @@
 
             <h3 id="navbar">How to integrate your App with Vespucci ?</h3>            
             <p>We have broken down the integration of Vespucci into your App into four key steps. It sounds long and tedious but in reality it is quite fast and the configuration wizards built into the dashboard automate many of the steps described in this document.</p>
-            <img src="img/10.png" alt="Vespucci Advanced Techs" width="950oh" height="600">
+            <img src="img/integration.png" alt="Vespucci Advanced Techs" width="950oh" height="600">
             
             <p>Let's first make a short summary of these steps before describing them in more detail. It always helps to know where you set foot, doesn't it ? Let's start with the blocks "Project" and "DataPipe". The project is a direct analogy of your app. The "DataPipe" is the "pipe" through which you will send your project data (i.e. from your app) to the Vespucci servers. These two steps do not really imply any configuration. They are mainly related to your development environment and your data extraction policy. We propose to start the configuration of Vespucci by first looking at these two elements because the configuration of the last two steps depend on them. The project context consists in specifying to Vespucci the context data (ip address, device manufacturer) that you want to collect by operating Vespucci within your app. Don't panic, this step is fully automated and after configuration, Vespucci will automatically generate a file in the programming language of your choice that you will just have to drag and drop into your favourite IDE. Finally, the last step, probably the most tedious, consists of copying and pasting a line of code into each of the views of your application, allowing you to carry out the actual tracking. You are invited to associate to this tracking what we call "UX DNA" which corresponds to interface elements of your app on which you wish to investigate. </p>
             
@@ -494,7 +494,15 @@ vespucciTools.sendViewEvent(viewName:"ProductView", viewProperties:["price":pric
 
 
             <h3 id="installation">Installation</h3>
-            <p></p>
+            <p>Vespucci runs on any Mac running macOS 11 (Big Sur) or later. Vespucci is optimised for Apple Silicon Macs and supports the latest Apple technologies.               To install Vespucci on your Mac, go to your dashboard.
+              
+            </p>
+            <button style="background-image: linear-gradient(-45deg, #3230B3 0%, #8132E3 100%); border: none;" onclick="location.href='http://dashboard.vespuccianalytics.com'" type="button" class="btn btn-primary btn-xs">Open the Dashboard</button><br/><br/>
+
+              <p>Once logged in, click on "Download" in the lower left frame titled "Download Vespucci on your Mac". This action will reveal a window in which you will be prompted to request access to Vespucci. Simply click on "Request Access" and we will get back to you shortly. You will then be able to download Vespucci freely from your dashboard using the same window.</p>
+              
+              <img src="img/15.png" alt="Vespucci Advanced Techs" width="850oh" height="600">
+
             <hr class="hr-dash my-7">
 
 
@@ -576,6 +584,19 @@ vespucciTools.sendViewEvent(viewName:"ProductView", viewProperties:["price":pric
               <img src="img/09.png" alt="Vespucci Advanced Techs" width="850oh" height="600">
             <hr class="hr-dash my-7">
             <h3 id="dimensions">Dimensions</h3>
+            <p>Now that you have written your story in the story editor using the insights of the StoryFinder, it is time to visualize it. Visualizing a story is about when, where and in what context the scenario you have described occurs. This visualisation takes place through dimensions. The dimensions can be accessed using the buttons in the left column of Vespucci. There are three of them.</p>
+            
+            <p>The time dimension allows you to display the occurrence of the story according to the time of day, the day of the week or the month. The lower frame shows the commitment of your users according to these different temporal measures.</p>
+            <img src="img/16.png" alt="Vespucci Advanced Techs" width="850oh" height="600">
+
+            <p>The geographical or places dimension allows you to visualise the geographical distribution of the occurrence of your story.</p>
+            <img src="img/17.png" alt="Vespucci Advanced Techs" width="850oh" height="600">
+
+            <p>The technological dimension allows you to tell your story according to the operating system of your users, the language of their device or the model of their terminal.</p>
+            <img src="img/18.png" alt="Vespucci Advanced Techs" width="850oh" height="600">
+
+            
+
           </div>
 
         </div>
