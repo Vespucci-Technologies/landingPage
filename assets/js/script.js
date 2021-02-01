@@ -25,7 +25,7 @@ $(function() {
     |
     */
 
-    googleAnalyticsId: '',
+    googleAnalyticsId: 'G-RN6BPRBKYD',
 
     /*
     |--------------------------------------------------------------------------
