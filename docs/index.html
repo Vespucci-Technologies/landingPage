@@ -477,7 +477,7 @@ vespucciTools.sendViewEvent(viewName:"ProductView", viewProperties:["price":pric
             <pre><code class="language-javascript">AppState.addEventListener('change', state => {
   if (state === 'active') {
     sendTrackEvent("Application Opened", {});
-  } else if (state === 'inactive') {
+  } else if (state === 'background') {
     sendTrackEvent("Application Backgrounded", {});
   }
 });</code></pre>
