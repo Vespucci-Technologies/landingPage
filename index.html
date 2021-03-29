@@ -35,14 +35,14 @@
   <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light navbar-stick-light" data-navbar="sticky">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="sticky" >
       <div class="container">
 
         <div class="navbar-left">
           <button class="navbar-toggler" type="button">&#9776;</button>
           <a class="navbar-brand" href="#hero">
             <img class="logo-dark" src="assets/img/logo-dark.png" alt="logo">
-            <img class="logo-light" src="assets/img/logo-light.png" alt="logo">
+            <img class="logo-light" src="assets/img/logo-dark.png" alt="logo">
           </a>
         </div>
 
@@ -50,10 +50,10 @@
           <span class="navbar-divider d-mobile-none"></span>
 
           <nav class="nav nav-navbar">
-            <a style="color:white" class="nav-link" href="#tech">Technologies</a>
-            <a style="color:white" class="nav-link" href="#start">Pricing</a>
-            <a style="color:white"class="nav-link" href="./docs/index.html">Docs</a>
-            <a style="color:white" class="nav-link" href="./changelog/index.html">Changelog</a>
+            <a style="color:black" class="nav-link" href="#tech">Technologies</a>
+            <a style="color:black" class="nav-link" href="#price">Pricing</a>
+            <a style="color:black"class="nav-link" href="./docs/index.html">Docs</a>
+            <a style="color:black" class="nav-link" href="./changelog/index.html">Changelog</a>
           </nav>
         </section>
 
@@ -64,236 +64,254 @@
 
 
     <!-- Header -->
-    <header id="hero" class="header text-white pt-12 pb-0" style="background-image: linear-gradient(-45deg, #1D2A4A 0%, #516276 100%);" >
+    <header id="hero" class="header text-white pt-12 pb-0" style="background-image: linear-gradient(0deg, #EFFEF4 0%, #C4E1FC 100%);" >
       
-      <header class="section-header" style="margin-top:-60px">
-        <h2  style="font-size: 42px">Get unexpected insights about your data.</h2>
-        <p>Here’s Vespucci, a new kind of analytics tool. <br>
-          As insightful as screen recording. Privacy compliant. Scalable. AppStore Ready.</p>
+      <header class="section-header" style="margin-top:-60px; margin-bottom: 60px">
+        <p style="color: #A9A9A9; font-size: 16px; margin-bottom: -5px">Introducing Vespucci</p>
+        <h2  style="font-size: 42px; color: black">Get unexpected insights about your data.</h2>
+        <p style="color: #A9A9A9; font-size: 16px; margin-top: -5px; margin-bottom: -20px">A new kind of analytics solution, as insightful as screen recording, privacy compliant, scalable.</p>
+
       </header>
       <div class="container-header">
-        <img src="assets/img/vespucciHeroBanner.png" alt="Vespucci Advanced Techs" width="950oh" height="600" class="center">
+        <img src="assets/img/vespucciHeroBanner.png"  alt="Vespucci Advanced Techs" width="900oh" height="600" class="center">
       </div>
     </header><!-- /.header -->
     
-
-
+    
     <!-- Main Content -->
     <main class="main-content">
-      <section class="section" style="background: #17181C;">
+      <section class="section" style="background: #F1F2F7;">
         <div class="container">
-          <header class="section-header">
-            <h2 id="tech" style="color: white;">Our statistics models identify insights that you wouldn’t have thought of.</h2>
-            <p>Most analytics tools ask you to specify what you’re looking for. That’s a problem, because often you’re using analytics because you’re not sure what you’re looking for ! And even if you think you do, you could be closing the door on certain behaviours, missing hidden value. That’s why we’ve designed models that highlight the elements and content in your app that reveal remarkable behaviours.</p>
-          </header>
-          
-          <img src="assets/img/storyFinderHero2.png" alt="Vespucci Advanced Techs" width="950oh" height="600" class="center">
-          
-          <header class="section-header">
-            <p id="legendParagraph">After helping you to identify a valuable UX Element (let's say the price), Vespucci highlights the values of this component (the different price ranges) that are likely to increase the probability of a defined behaviour.</p>
-          </header>
-          <hr/>
+          <div class="col-md-12">
 
-          <header class="section-header">
-            <div class="row gap-y text-center">
-              <div class="col-md-6">
-                <div id="box1">
-                  <h4 style="color: white;">Everything you had with screen recordings, at scale and privacy compliant.</h4>
-                  <p id="boxParagraph">App users are unpredictable, which is why publishers have started making video recordings of app sessions to try and not miss anything. Unfortunately, relying on video recordings introduces significant privacy and sampling challenges. We match the knowledge provided by video recordings, with many fewer constraints.</p>
-              </div>  
-              <div id="box2">
-                 <h4 style="color: white;" id="titleParagraphWhite">Build Around Privacy.
-                   App Store Ready.</h4>
-                   <p id="boxParagraphWhite">Respecting users’ privacy is crucial. Vespucci helps you limit the data you need to collect, delivering an experience that fits Apple’s approach to privacy.</p>
-             </div>             
-             </div>
+            <div id="box1">
+              <header class="section-header">
+                <img id="tech" style="margin-bottom: 25px" src="assets/img/stats.png" alt="Vespucci Advanced Techs" width="100oh" height="600">
+                <p style="color: #C0C0C0; font-size: 15px; margin-bottom: -5px">Our statistics models identify insights that you wouldn’t have thought of.</p>
+                <h2 style= font-weight: bolder;">Find what you forgot to look for.</h2>
 
-              <div class="col-md-6">
-                <div id="box1">
-                  <img src="assets/img/gpuHero.png" alt="Vespucci Advanced Techs" width="150oh" height="600">
-                  <br/>
-                  <h4 style="color: white;">Patented, GPU Accelerated Data Processing.</h4>
-                  <p id="boxParagraph">Vespucci is based on the same tech used in video games and professional graphics software: the low-level Metal API. This, combined with patented in-house data processing approaches, allows us to process large amounts of data, unearthing behavior and patterns that you may not have anticipated.</p>
-                </div>
-              </div>
-            </div>
-          </header>
-        </div>
-      </section>
-      
-      <section class="section" style="background: #202328;">
-        <div class="container"> 
-          <header class="section-header">
-            <h2 style="color: white;">Visualize how consistent your metrics are across time, place and more.</h2>
-            <p>Once you have Vespucci’s insights, you can see how consistently they appear depending on your users’ geographies, times, or technologies. For example, these visualizations have helped a meal delivery service to see that users in the south of Brussels abandoned the app after seeing negative customer reviews, while users in the city center were relatively indifferent to those reviews.</p>
-          </header>
+                <p style="color: #A9A9A9; font-size: 15px">Most analytics tools ask you to specify what you’re looking for. That’s a problem, because often you’re using analytics because you’re not sure what you’re looking for ! And even if you think you do, you could be closing the door on certain behaviours, missing hidden value. That’s why we’ve designed models that highlight the elements and content in your app that reveal remarkable behaviours.</p>
+              </header>
+
+            
+            <video width="850oh" loop autoplay>
+              <source src="assets/img/storyFinder.webm"
+              type="video/webm">
           
-          <img src="assets/img/heroPlaces.png" alt="Vespucci Advanced Techs" width="950oh" height="600" class="center">
+              <source src="assets/img/storyFinder.mp4"
+                      type="video/mp4">
           
+              Sorry, your browser doesn't support embedded videos.
+            </video>
           <header class="section-header">
-            <p id="legendParagraph">Visualize the homogeneity of a behavior you have identified using the statistical tools built into Vespucci (e.g. users abandoning the app for a price > $79) across space through visual and accurate maps.</p>
+            <br/>
+            <p id="legendParagraph">After helping you to identify a valuable UX Element (let's say the price), Vespucci highlights the values of this component (the different price ranges) that are likely to increase the probability of a defined behaviour.</p>          
           </header>
-          <hr/>
-
-          <header class="section-header">
-            <div class="row gap-y text-center">
-              <div class="col-md-6">
-                <div id="box3">
-                  <h4 style="color:white">AI-driven Data Identification & Processing.</h4>
-                  <p id="boxParagraphWhite">We use machine learning to present your raw data in forms that marketers, customers and investors understand, highlighting emotions, categories or keywords.</p>
-              </div>  
-              <div id="box1" style="background:#17181C">
-                 <h4 style="color:white">Easy Integration with a new kind of API or via Segment.</h4>
-                   <p id="boxParagraph">We know how sensitive the integration of a tool like Vespucci can be. We've designed a configuration wizard that writes the necessary code for the integration for you, seamlessly. You can also rely on your existing Segment configuration.</p>
-             </div>             
-             </div>
-
-              <div class="col-md-6">
-                <div id="box1" style="background:#17181C">
-                  <img src="assets/img/dataViewer1.png" alt="Vespucci Advanced Techs" width="450oh" height="600">
-                  <br/>
-                  <h4 style="color:white">Complex data visualization at your fingertips.</h4>
-                  <p id="boxParagraph">Combine multiple dimensions in a few clicks to reveal insights that would otherwise have been lost in your datasets.</p>
-                </div>
-              </div>
-            </div>
-          </header>
-          
-        </div>        
-      </section>
-      
-      <section class="section" style="background: #17181C;">
-        <div class="container">
-          <header class="section-header">
-            <h2 style="color: white;">A technology that translates data into value.</h2>
-            <p>Vespucci is powered by complex technologies and models. We rely on these to create value out of your data.
-              However, we don't want this data to obscure what really matters to you: the experience of your users. That's why Vespucci not only presents you with data, but also helps you to reconstruct the stories experienced by your users in your app. These stories materialise in the form of natural language sentences based on emotions, categories or keywords.</p>
-          </header>
-          
-          <img src="assets/img/storyHero.png" alt="Vespucci Advanced Techs" width="950oh" height="600" class="center">
-          
-          <header class="section-header">
-            <p id="legendParagraph">As an exemple, your story can track user that order after seeing a negative review.</p>
-          </header>
-          <hr/>
-
-          <header class="section-header">
-            <div class="row gap-y text-center">
-              <div class="col-md-6">
-                <div id="box1">
-                  <h4 style="color: white;">Works on iOS, Android and ReactNative.</h4>
-                  <p id="boxParagraph">Our tool can be easily integrated into your mobile apps. We support most of the technologies on the market. So you can integrate Vespucci with an iOS app coded in Swift or Objective-C, an Android app coded in Java or Kotlin. We also support ReactNative or Ionic projects.</p>
-              </div>  
-              <div id="box4">
-                 <h4 style="color: white;" id="titleParagraphWhite">Track user Engagement & Retention.</h4>
-                   <p id="boxParagraphWhite">Vespucci has powerful visual tools that allow you to track user engagement and retention. All of this is always guided by our statistical tools. </p>
-             </div>             
-             </div>
-
-              <div class="col-md-6">
-                <div id="box1">
-                  <img src="assets/img/rosettaIcon.png" alt="Vespucci Advanced Techs" width="150oh" height="600">
-                  <br/>
-                  <h4 style="color: white;">Rosetta Stone. Multiple Platforms. One Experience.</h4>
-                  <p id="boxParagraph">Tracking data from platforms based on different technologies, such as your Android app and iOS, or your app and website, can quickly become complex. Each of these products are different because they have to accommodate different UI paradigms. However, in fact some elements have conceptually the same roles. Rosetta Stone offers you a unique interface to manipulate these hexagonal data as if they were one.</p>
-                </div>
-              </div>
-            </div>
-          </header>
-        </div>
-      </section>
-
-      
-      <section class="section" style="background: #202328;">
-        <div class="container">
-          <header class="section-header">
-            <h2 id="start" style="color: white;">Unleash the value of your data.</h2>
-            <p>Start using Vespucci today. Create an account in just a few minutes to request early access to Vespucci.</p>
-          </header>
-          <br  />
           
           <div class="row gap-y text-center">
             <div class="col-md-4">
-              <div id="box1" style="background: #17181C;">
-                <img src="assets/img/iconTemplate.png" alt="Vespucci Advanced Techs" width="120oh" height="600" class="center">
-                <h3 style="color: white;text-align: center;">DataLab Lite.</h3>                  
-                <h4 style="color: #797979; text-align: center;">Start for Free.</h4>
-                <p style="color: white; text-align: center;" id="boxParagraph">100k Monthly Data Layers.<br/></p>
-                <div class="center">
-                  <a class="button-navBar" style="width:160px; font-family: 'Source Sans Pro';" href="https://dashboard.vespuccianalytics.com/account/signup">Get Started</a>
-                </div>
-                <br/> 
-                <p style="color: white; text-align: center;" id="boxParagraph">Included in Vespucci DataLab S: </p>
-                <div class="center">
-
-                <ul style="text-align:left;">
-                  <li>100K Monthly Data Layers.</li>
-                  <li>2 DataPipes.</li>
-                  <li>2 Projects.</li>
-                  <li>30-days Data Retention.</li>
-                </ul>
-                </div>
-
-
+              <div id="box1" style="background: #F1F2F7;">
+                <img src="assets/img/scale.png" alt="Vespucci Advanced Techs" width="100oh" height="600">
+                <br/>
+                <p style="color: black; text-align: left; font-size: 16px"><b>The first unsupervised solution that scales.</b></p>
+                <p id="boxParagraph" style="font-size: 13px">Relies on our dynamic insights and stop spending hours looking at screen recordings or sessions replay.</p>
             </div>  
            </div>
-
+          
             <div class="col-md-4">
-              <div id="box1" style="background: #17181C;">
-                <img src="assets/img/iconLabPro.png" alt="Vespucci Advanced Techs" width="120oh" height="600" class="center">
-                <h3 style="color: white;text-align: center;">DataLab Pro.</h3>                  
-                <h4 style="color: #797979; text-align: center;">$799/mo.</h4>
-                <p style="color: white; text-align: center;" id="boxParagraph">1M Monthly Data Layers.<br/></p>
-                <div class="center">
-                <a class="button-navBar" style="width:160px; font-family: 'Source Sans Pro';" href="https://dashboard.vespuccianalytics.com/account/signup">Get Started</a>
-                </div>
-                <br/> 
-                <p style="color: white; text-align: center;" id="boxParagraph">Included in DataLab Pro: </p>
-                <div class="center">
-
-                <ul style="text-align:left;">
-                  <li>1M Monthly Data Layers.</li>
-                  <li>Unlimited DataPipes.</li>
-                  <li>Unlimited Projects.</li>
-                  <li>180-days Data Retention.</li>
-                </ul>
-                </div>
-
+              <div id="box1" style="background: #F1F2F7;">
+                <img src="assets/img/lab2.png" alt="Vespucci Advanced Techs" width="100oh" height="600">
+                <br/>
+                <p style="color: black; text-align: left; font-size: 16px"><b>Automate your hypothesis formulation.
+                  
+                </b></p>
+                <p id="boxParagraph" style="font-size: 13px"> Instead of keeping you guessing, we automate the formulation of hypotheses about your UX. </p>
+            </div>  
+            </div>
+            <div class="col-md-4">
+              <div id="box1" style="background: #F1F2F7;">
+                <img src="assets/img/privacy.png" alt="Vespucci Advanced Techs" width="100oh" height="600">
+                <br/>
+                <p style="color: black; text-align: left; font-size: 16px"><b>Designed Around Privacy. App Store Ready.</b></p>
+                <p id="boxParagraph" style="font-size: 13px">Vespucci helps you limit the data you need to collect, delivering an experience that fits Apple’s approach to privacy.</p>
+          
               </div>
             </div>
             
-            <div class="col-md-4">
-              <div id="box1" style="background: #17181C;">
-                <img src="assets/img/iconTemplateEntreprise.png" alt="Vespucci Advanced Techs" width="120oh" height="600" class="center">
-                <h3 style="color: white;text-align: center;">Enterprise.</h3>                  
-                <h4 style="color: #797979; text-align: center;">Custom Volume.</h4>
-                <p style="color: white; text-align: center;" id="boxParagraph">Custom Data Layers quota.<br/></p>
-                <div class="center">
-                  <a class="button-navBar" style="width:160px; font-family: 'Source Sans Pro';" href="mailto:info@amerigotechnology.com?subject=Contact Vespucci">Contact Us</a>
-                </div>
-                <br/> 
-                <p style="color: white; text-align: center;" id="boxParagraph">Included in Vespucci DataLab S: </p>
-                <div class="center">
-
-                <ul style="text-align:left;">
-                  <li>Custom Volume.</li>
-                  <li>Premium Support.</li>
-                  <li>Unlimited Projects.</li>
-                  <li>Custom Data Retention Policies.</li>
-
-                </ul>
-                </div>
-
-              </div>
-            </div>
-
+          
           </div>
+          
 
 
+            
+          </div>  
 
           
+
+         </div>
         </div>
       </section>
+      
+    <main class="main-content">
+      <section class="section" style="background: #202328;">
+        <div class="container">
+          <div class="col-md-12" >
+
+            <div id="box1" style="background:#17181C">
+              <header class="section-header">
+                <img style="margin-bottom: 25px" src="assets/img/userProfile.png" alt="Vespucci Advanced Techs" width="100oh" height="600">
+                <p style="color: #C0C0C0; font-size: 15px; margin-bottom: -5px">Advanced profiling tools to explore how consistent your metrics are among your users
+</p>
+                <h2 style= "color: white;">A unique way to get to know your users.</h2>
+
+                <p style="color: #A9A9A9; font-size: 15px">Once you have Vespucci’s insights, you can see how consistently they appear depending on your users’ geographies, times, or technologies. For example, these visualizations have helped a meal delivery service to see that users in the south of Brussels abandoned the app after seeing negative customer reviews, while users in the city center were relatively indifferent to those reviews.</p>
+              </header>
+              <video width="850oh" loop autoplay>
+                <source src="assets/img/dimensions.webm"
+                type="video/webm">
+            
+                <source src="assets/img/dimensions.mp4"
+                        type="video/mp4">
+            
+                Sorry, your browser doesn't support embedded videos.
+              </video>
+              <header class="section-header">
+                <br/>
+                <p id="legendParagraph">Visualize the homogeneity of a behavior you have identified using the statistical tools built into Vespucci (e.g. users abandoning the app for a price > $79) across space through visual and accurate maps.</p></header>
+              
+              <div class="row gap-y text-center">
+                <div class="col-md-4">
+                  <div id="box1" style="background:#202328">
+                    <img src="assets/img/combine.png" alt="Vespucci Advanced Techs" width="100oh" height="600">
+                    <br/>
+                    <p style="color: white; text-align: left; font-size: 16px"><b>Complex data visualization at your fingertips.                  
+                    </b></p>
+                    <p id="boxParagraph" style="font-size: 13px">Combine multiple dimensions (Retention, Engagement, Time and More) about your users in a few clicks to reveal insights that would otherwise have been lost in your datasets.</p>
+                </div>  
+                </div>
+                <div class="col-md-4">
+                  <div id="box1" style="background:#202328">
+                    <img src="assets/img/AI.png" alt="Vespucci Advanced Techs" width="100oh" height="600">
+                    <br/>
+                    <p style="color: white; text-align: left; font-size: 16px"><b>AI-driven Data Identification & Processing.</b></p>
+                    <p id="boxParagraph" style="font-size: 13px">We use machine learning to present your raw data in forms that marketers, customers and investors understand, highlighting emotions, categories or keywords.</p>
+    
+                  </div>
+                </div>
+                
+                <div class="col-md-4">
+                  <div id="box1" style="background:#202328">
+                    <img src="assets/img/box.png" alt="Vespucci Advanced Techs" width="100oh" height="600">
+                    <br/>
+                    <p style="color: white; text-align: left; font-size: 16px"><b>Effortless integration with a new kind of SDK or Segment.</b></p>
+                    <p id="boxParagraph" style="font-size: 13px">We've designed a configuration wizard that writes the necessary code for the integration for you, seamlessly. You can also rely on your existing Segment configuration.</p>
+                </div>  
+               </div>
+                
+    
+              </div>
+    
+          </div>  
+     
+          
+
+         </div>
+        </div>
+      </section>
+      
+      
+      <section class="section" style="background: #17181C;">
+        <div class="container">
+          <div class="col-md-12" >
+
+            <div id="box1" style="background:#202328">
+              <header class="section-header">
+                <img id="price" style="margin-bottom: 25px" src="assets/img/price.png" alt="Vespucci Advanced Techs" width="100oh" height="600">
+                <p style="color: #C0C0C0; font-size: 15px; margin-bottom: -5px">Unleash the value of your data.</p>
+                <h2 style= "color: white;">A technology that translates data into value.</h2>
+                <p style="color: #A9A9A9; font-size: 15px">Start using Vespucci today. Create an account in just a few minutes to request early access to Vespucci. Our tool can be easily integrated into your mobile apps. We support most of the technologies on the market. So you can integrate Vespucci with an iOS app coded in Swift or Objective-C, an Android app coded in Java or Kotlin. We also support ReactNative or Ionic projects.</p>
+              </header>
+
+              <div class="row gap-y text-center">
+                <div class="col-md-4">
+                  <div id="box1" style="background: #17181C;">
+                    <img src="assets/img/free.png" alt="Vespucci Advanced Techs" width="100oh" height="600" class="center">
+                    <h3 style="color: white;text-align: center;">DataLab Lite.</h3>                  
+                    <h4 style="color: #797979; text-align: center;">Start for Free.</h4>
+                    <p style="color: white; text-align: center;" id="boxParagraph">100k Monthly Data Layers.<br/></p>
+                    <div class="center">
+                      <a class="button-navBar" style="width:160px; font-family: 'Source Sans Pro';" href="https://dashboard.vespuccianalytics.com/account/signup">Get Started</a>
+                    </div>
+                    <br/> 
+                    <p style="color: white; text-align: center;" id="boxParagraph">Included in Vespucci DataLab S: </p>
+                    <div class="center">
+    
+                    <ul style="text-align:left;">
+                      <li>100K Monthly Data Layers.</li>
+                      <li>2 DataPipes.</li>
+                      <li>2 Projects.</li>
+                      <li>30-days Data Retention.</li>
+                    </ul>
+                    </div>
+                </div>  
+               </div>
+    
+                <div class="col-md-4">
+                  <div id="box1" style="background: #17181C;">
+                    <img src="assets/img/lab.png" alt="Vespucci Advanced Techs" width="100oh" height="600" class="center">
+                    <h3 style="color: white;text-align: center;">DataLab Pro.</h3>                  
+                    <h4 style="color: #797979; text-align: center;">$499/mo.</h4>
+                    <p style="color: white; text-align: center;" id="boxParagraph">1M Monthly Data Layers.<br/></p>
+                    <div class="center">
+                    <a class="button-navBar" style="width:160px; font-family: 'Source Sans Pro';" href="https://dashboard.vespuccianalytics.com/account/signup">Get Started</a>
+                    </div>
+                    <br/> 
+                    <p style="color: white; text-align: center;" id="boxParagraph">Included in DataLab Pro: </p>
+                    <div class="center">
+                    <ul style="text-align:left;">
+                      <li>1M Monthly Data Layers.</li>
+                      <li>Unlimited DataPipes.</li>
+                      <li>Unlimited Projects.</li>
+                      <li>180-days Data Retention.</li>
+                    </ul>
+                    </div>
+    
+                  </div>
+                </div>
+                
+                <div class="col-md-4">
+                  <div id="box1" style="background: #17181C;">
+                    <img src="assets/img/pro.png" alt="Vespucci Advanced Techs" width="100oh" height="600" class="center">
+                    <h3 style="color: white;text-align: center;">Enterprise.</h3>                  
+                    <h4 style="color: #797979; text-align: center;">Custom Volume.</h4>
+                    <p style="color: white; text-align: center;" id="boxParagraph">Custom Data Layers quota.<br/></p>
+                    <div class="center">
+                      <a class="button-navBar" style="width:160px; font-family: 'Source Sans Pro';" href="mailto:info@amerigotechnology.com?subject=Contact Vespucci">Contact Us</a>
+                    </div>
+                    <br/> 
+                    <p style="color: white; text-align: center;" id="boxParagraph">Included in Vespucci DataLab S: </p>
+                    <div class="center">
+    
+                    <ul style="text-align:left;">
+                      <li>Custom Volume.</li>
+                      <li>Premium Support.</li>
+                      <li>Unlimited Projects.</li>
+                      <li>Custom Retention Policies.</li>
+                    </ul>
+                    </div>
+    
+                  </div>
+                </div>
+    
+              </div>
+          </div>  
+          </div>
+
+         </div>
+        </div>
+      </section>
+
+      
     </main>
 
     <!-- Footer -->
@@ -301,6 +319,7 @@
       <div class="container">
         <div class="row gap-y align-items-center">
           <div class="col-12 col-lg-12">
+            <br/>
             <a class="button-navBar" style="width:140px; font-family: 'Source Sans Pro'; color:white; float: left;" href="mailto:info@amerigotechnology.com?subject=Contact Vespucci">Contact-Us</a><br/><br  />
             <p style="font-size:10px; float: left;">Copyright © 2021  Amerigo Technology B.V.  All rights reserved.  Apple, iPhone, MacBook Pro are trademarks of Apple Inc.  All rights reserved.</p>
           </div>
