@@ -70,15 +70,10 @@
       </div>
     </header><!-- /.header -->
 
-
-
-
-
     <!-- Main Content -->
     <main class="main-content">
       <div class="container">
         <div class="row">
-
 
           <!--
           |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
@@ -109,13 +104,20 @@
                   </li>
                   
                   <li class="nav-item">
-                    <a class="nav-link" href="#datalayerAPI">DataLayers API <i class="nav-angle"></i></a>
+                    <a class="nav-link" href="#datalayerAPI">DataPush API <i class="nav-angle"></i></a>
                     <div class="nav">
                       <a class="nav-link" href="#APIStarted">Getting started</a>
                       <a class="nav-link" href="#iOSAPI">iOS API</a>
                       <a class="nav-link" href="#AndroidAPI">Android API</a>
                       <a class="nav-link" href="#react">ReactNative API</a>
 
+                    </div>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="#segment">Segment <i class="nav-angle"></i></a>
+                    <div class="nav">
+                      <a class="nav-link" href="#segmentStarted">Getting started</a>
                     </div>
                   </li>
 
@@ -270,6 +272,15 @@
             <p>This will reveal a window inviting you to configure the context of one of your projects. First select the project for which you want to configure the context using the ad-hoc menu. You are then prompted to enter the bundle-id of your app. Then you can select the data that Vespucci will collect from your customers' devices. Please note that the configuration you make is by no means irreversible. After configuration, the dashboard produces a helper file in the programming language you specify. You must add this file to your preferred IDE. With the exception of react-native projects which require the import of two external libraries, Android or iOS projects do not require any other dependencies than the file produced by the dashboard.</p>
             <br/>
             <h3 id="datalayers">4. Create DataLayers.</h3>
+            <p>The acquisition of data from your Apps (your projects) is done by means of a "vehicle" that we have called DataLayer. Conceptually, a DataLayer corresponds to a user behavior that you would like to investigate. Depending on the observed behavior, different types of DataLayers can be mobilized.</p>            
+            <img src="img/14.png" alt="Vespucci Advanced Techs" width="950oh" height="600">
+            <br/>
+            <br/>       
+            <p>- The layers of the Screen class allow to observe the user's path within the customer's app. They also allow you to measure the commitment associated with a particular screen.</p>
+            
+            <p>- The layers of the Action class allow to observe specific and punctual actions triggered by your users (e.g adding a recipe to the favorites, adding an item to the shopping cart...).</p>
+            
+            <p>In addition, you can attach "DNA" to your Layers. This DNA corresponds to content elements displayed on the screen for which you would like to test the impact in terms of user experience. This "DNA" is at the heart of the Vespucci experience. Our statistical models will use them as variables to determine if they are the cause of a behaviour you specify. Don't be stingy with DNA, add as much as you can even if they seem incongruous at first glance. This is a different approach to that recommended by many other analytical tools but our tool is different in its design. </p>
             <p>DataLayers consist of a line of code that you must add to each view of your App. 
               You can also add additional DataLayers to track a specific action (e.g. add an item to your favourites...). Then we invite you to graft to each of these layers what we call "UXDNA" pieces. These represent elements of the experience, of the content of the product on which you would like to be able to investigate.</p>
               
@@ -284,7 +295,7 @@
               <pre><code class="language-swift">vespucciTools.sendTrackEvent(eventName: "share_image.", eventProperties: ["name":self.name,"full_text":self.text ])
               </code></pre>
               
-              <p>If you use Segment or one of our SDKs you do not have to create DataLayers. These correspond to the tracks and views that you have defined in Segment or are generated automatically (in the case of the SDK). If you use our API, you have to create the DataLayers manually and copy and paste a snippet of code on each of your views.</p>
+              <p>If you use Segment or one of our SDKs you do not have to create DataLayers. These correspond to the tracks and views/pages that you have defined in Segment or are generated automatically (in the case of the SDK). If you use our API, you have to create the DataLayers manually and copy and paste a snippet of code on each of your views.</p>
               
               <img src="img/13.png" alt="Vespucci Advanced Techs" width="850oh" height="600">
               
@@ -297,23 +308,36 @@
               | DataLayers API
               |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
             !-->
+            <h2 id="segment">Segment (Coming Soon)</h2>
+            <h3 id="segmentStarted">Getting started</h3>
+            <p>Using Vespucci hand in hand with Segment makes its integration incredibly fast. It takes only a few clicks to start using Vespucci with your data. You don't have to add anything to your app code so you don't have to involve your dev team. An intuitive interface allows you to process the data from Segment by yourself, from Vespucci.</p>
+            <img src="img/19.png" alt="Vespucci Advanced Techs" width="950oh" height="600">
+            <br/>
+            <p>1. From the Destinations catalog page in the Segment App, click <b>Add Destination</b>.<br/>
+              2. Search for Vespucci in the <b>Destinations Catalog</b>, and select the Vespucci destination.<br/>
+              3. Choose which <b>Source</b> should send data to the Vespucci destination.<br/>
+              4. Go to the Dashboard, under Your Active Projects find and copy the <b>API key</b> of the project you wish to associate with Segment.<br/>
+              5. Enter the <b>API Key</b> in the Vespucci destination settings in Segment.</p>
+
+            <h4>1. Page.</h4>
+            If you aren't familiar with the Segment Spec, take a look at the <a href="https://segment.com/docs/connections/spec/page/">Page method documentation</a> to learn about what it does. An example call would look like:<br/><br/>
+            <pre id="highlighter" class="line-numbers" ><code class="language-js">analytics.page()</code></pre>
+            Segment sends Page calls to Vespucci as a screen.<br/><br/>
+            
+            <h4>2. Identify.</h4>
+            If you aren't familiar with the Segment Spec, take a look at the <a href="https://segment.com/docs/connections/spec/identify/">Identify method documentation</a> to learn about what it does. An example call would look like:<br/><br/>
+            <pre id="highlighter" class="line-numbers" ><code class="language-js">analytics.identify('userId123', {email: 'john.doe@example.com'});</code></pre>
+            Segment sends Identify calls to Vespucci as an identify event.<br/><br/>
+            
+            <h4>3. Track.</h4>
+            If you aren't familiar with the Segment Spec, take a look at the <a href="https://segment.com/docs/connections/spec/track/">Track method documentation</a> to learn about what it does. An example call would look like:<br/><br/>
+            <pre id="highlighter" class="line-numbers" ><code class="language-js">analytics.track('Login Button Clicked')</code></pre>
+            Segment sends Page calls to Vespucci as an action.<br/><br/>
+
             <h2 id="datalayerAPI">DataLayers API</h2>
             <h3 id="APIStarted">Getting started</h3>
 
-            <p>The acquisition of data from your Apps (your projects) is done by means of a "vehicle" that we have called DataLayer. Conceptually, a DataLayer corresponds to a user behavior that you would like to investigate. Depending on the observed behavior, different types of DataLayers can be mobilized.</p>
-            <br/>
-            
-            <img src="img/14.png" alt="Vespucci Advanced Techs" width="950oh" height="600">
-
-            <br/>
-            <br/>
-            <p>- The layers of the Screen class allow to observe the user's path within the customer's app. They also allow you to measure the commitment associated with a particular screen.</p>
-            
-            <p>- The layers of the Action class allow to observe specific and punctual actions triggered by your users (e.g adding a recipe to the favorites, adding an item to the shopping cart...).</p>
-            
-            <p>In addition, you can attach "DNA" to your Layers. This DNA corresponds to content elements displayed on the screen for which you would like to test the impact in terms of user experience. This "DNA" is at the heart of the Vespucci experience. Our statistical models will use them as variables to determine if they are the cause of a behaviour you specify. Don't be stingy with DNA, add as much as you can even if they seem incongruous at first glance. This is a different approach to that recommended by many other analytical tools but our tool is different in its design. </p>
-            
-            <p>Some Layers have to be configured in a project to allow Vespucci to work properly.</p>
+            <p>Some Layers have to be configured in your project to allow Vespucci to work properly.</p>
             
             <table class="table table-striped">
               <thead>
