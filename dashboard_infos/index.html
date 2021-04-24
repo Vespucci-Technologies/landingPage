@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<title>Vespucci — Open Positions</title>
+
+	<!-- Styles -->
+	<link href="../assets/css/page.css" rel="stylesheet">
+	<link href="../assets/css/style.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro">    
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+	<link rel="icon" href="../assets/img/favicon.png">
+  </head>
+  <body>
+	
+	<!-- Main Content -->
+	<main class="main-content">
+	  <section class="section">
+		<div class="container-sm">
+		  <h2>The Tracking Method Explained.</h2>
+		  <p>This option is not that obvious and deserves some explanations. First, let's look at the big picture. You can think of the data from your project as a stream. This "stream" consists of actions, views and identities. Vespucci will then consolidate these actions and views into a session. A session is a stock. It contains all the actions and views that are performed by an end user in a single action sequence. You can choose to define this action sequence in two different ways.
+		  </p>
+		  <br>
+		  <img src="img/actionBased.png" alt="Vespucci Advanced Techs" width="130oh" height="200"><br/><br/>
+		  <h5>Action Based Tracking</h5>
+		  <p>We call the first approach <b>Action Based Tracking</b>, it consists  in defining the session as all the views and all the tracks realized between two remarkable actions: namely "Application Opened" and "Application Backgrounded". These events are included by default in the <a href="https://segment.com/docs/connections/spec/page/">Native Mobile Spec of Segment</a> for a Segment based project. It is also the most accurate way to consolidate a session. </p>
+		  <br/>
+		  <img src="img/timeBased.png" alt="Vespucci Advanced Techs" width="130oh" height="200"><br/><br/>
+		  <h5>Time Based Tracking</h5>
+			<p>However, it is possible that, for various reasons, your Segment integration does not include the "Application Opened" and "Application Backgrounded" tracks. This is why we introduce a second tracking method called <b>Time Based Tracking</b>. It consists in defining the session on the basis of a temporal criterion. Vespucci will analyze the timestamp of each of the tracks and views sent by segment and try to consolidate them into concurrent events. This approach is less precise than the Action Based Tracking. </p>
+			<br/>
+		</div>
+	  </section>
+	</main><!-- /.main-content -->
+	
+	<!-- Scripts -->
+	<script src="../assets/js/page.min.js"></script>
+	<script src="../assets/js/script.js"></script>
+
+  </body>
+</html>
