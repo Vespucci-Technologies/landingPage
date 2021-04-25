@@ -340,6 +340,8 @@
             
             <p>2. On your Dashboard, within the <b>"Your Active Projects"</b> section click on the "+" button. Enter a name and select "Segment Destination" as the DataPipe.</p>
             
+            <img src="img/20.png" alt="Vespucci Advanced Techs" width="950oh" height="600">
+
             <p>3. Then you have to specify the <b>"Tracking Method"</b>. This option is a bit less obvious and deserves some explanation. First, let's look at the big picture. You can think of the data from Segment as a stream. This "stream" consists of tracks and views. Vespucci will then consolidate these tracks and views into a session, a concept that does not exist in Segment. A session is a stock. It contains all the tracks and views that are performed by an end user in a single action sequence. You can choose to define this action sequence in two different ways.</p>
             <ul>
               <li>We call the first approach <b>Action Based Tracking</b>, it consists  in defining the session as all the views and all the tracks realized between two remarkable tracks: namely "Application Opened" and "Application Backgrounded". These events are included by default in the <a href="https://segment.com/docs/connections/spec/page/">Native Mobile Spec of Segment</a>. It is also the most accurate way to consolidate a session.</li><br/>
@@ -354,10 +356,14 @@
             7. Choose which <b>Source</b> should send data to the Vespucci destination. Enter the <b>API Key</b> in the Vespucci destination settings in Segment. This is the API key you noted in step 4.</p>
 
             <h3 id="segmentRef">DataLayers Reference</h3>
-            <h6>A. Segment Page.</h6>
-            If you aren't familiar with the Segment Spec, take a look at the <a href="https://segment.com/docs/connections/spec/page/">Page method documentation</a> to learn about what it does. An example call would look like:<br/><br/>
+            <h6>A. Segment Page (or Segment Screen).</h6>
+            If you aren't familiar with the Segment Spec, take a look at the <a href="https://segment.com/docs/connections/spec/page/">Page method documentation</a> or at the <a href="https://segment.com/docs/connections/spec/screen/">Screen method documentation</a> to learn about what it does. An example call would look like:<br/><br/>
             <pre id="highlighter" class="line-numbers" ><code class="language-js">analytics.page()</code></pre>
-            Segment sends Page calls to Vespucci as a screen.<br/><br/>
+            
+            or, for a Screen (on Mobile)
+            <pre id="highlighter" class="line-numbers" ><code class="language-objectivec">[[SEGAnalytics sharedAnalytics] screen:@"Home" properties:@{ @"Feed Type": @"private" }];</code></pre>
+
+            Segment sends Page and Screens calls to Vespucci as a screen.<br/><br/>
             
             <h6>B. Segment Identify.</h6>
             If you aren't familiar with the Segment Spec, take a look at the <a href="https://segment.com/docs/connections/spec/identify/">Identify method documentation</a> to learn about what it does. An example call would look like:<br/><br/>
