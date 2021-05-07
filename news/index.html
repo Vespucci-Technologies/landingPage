@@ -41,11 +41,10 @@
             <a style="color:black" class="nav-link" href="#">Newsroom</a>
           </nav>
         </section>
-        <a  style="font-family: 'Source Sans Pro'" class="button-navBar" href="https://dashboard.vespuccianalytics.com">Dashboard</a>
+        <button style="background-image: linear-gradient(45deg, #545BF6, #55BAF9); border: none;" onclick="location.href='http://dashboard.vespuccianalytics.com'" type="button" class="btn btn-primary btn-xs">Dashboard </button><br/><br/>
       </div>
     </nav><!-- /.navbar -->
 
-    
     <!-- Header -->
     <header class="header text-black bg-dark pt-9 pb-5" style="background-image: linear-gradient(0deg, #EFFEF4 0%, #C4E1FC 100%);">
       <div class="container">
@@ -53,11 +52,25 @@
       </div>
     </header><!-- /.header -->
     
-
     <!-- Main Content -->
     <main class="main-content">
       <section class="section">
         <div class="container-sm">
+          <h2 id="TimeTracking">A new way to track data in Vespucci.</h2>
+          <p class="text-light"><small>Published on May 7, 2021</small></p>
+          <img src="img/blogScreen.004.png" alt="Vespucci Advanced Techs" width="950oh" height="600">
+          <br/>
+          <br/>
+          <p>Until now, Vespucci consolidated the usage data of your systems based on two particular actions:
+            "Application Opened" and "Application Backgrounded". These actions are quite natural if we consider a mobile application based on a transactional model.  Let's imagine an e-commerce app, the customer opens the app, consults some products, makes a purchase and finally closes the app. In such a case, the notion of session is quite straightforward and defining it on the basis of Opened and Backgrounded tracks makes a lot of sense. However, there are some apps for which the notion of Session is less direct, so defining them on the basis of these elements probably makes less sense. Finally, and this is probably the most important point, some digital experiences (a support conversation, the viewing of an advertisement) cannot be understood through a definition based on the supposed opening or closing of an app (since the product is potentially no longer an app). That's why we deploy today a new way to consolidate your sessions in Vespucci. An approach that no longer requires to define actions to track the opening or closing of the app. </p>
+            <br>
+            <img src="img/blogScreen.005.png" alt="Vespucci Advanced Techs" width="950oh" height="600">
+            <br><br>
+            <p>We call this new tracking method "Time Based Tracking". It consists in defining the session on the basis of a temporal criterion. Vespucci will analyze the timestamp of each of the DataLayers you are sending and try to consolidate them into concurrent events.</p>
+            <p>This approach is available today on your dashboard. To activate it, create a new project and specify "Time Based Tracking" in the new "Tracking Method" menu.</p>
+            
+            <hr class="my-8">
+
 
           <h2 id="Introducing_Vespucci_1.3">Introducing Vespucci 1.3, Data Science for Everyone.</h2>
           <p class="text-light"><small>Published on April 21, 2021</small></p>
@@ -102,7 +115,7 @@
   <div class="container">
     <div class="row gap-y align-items-center">
       <div class="col-12 col-lg-12">
-        <a class="button-navBar" style="width:140px; font-family: 'Source Sans Pro'; color:white; float: left;" href="mailto:info@amerigotechnology.com?subject=Contact Vespucci">Contact-Us</a><br/><br  />
+      <button style="background-image: linear-gradient(45deg, #545BF6, #55BAF9); border: none;" onclick="location.href="mailto:info@amerigotechnology.com?subject=Contact Vespucci" type="button" class="btn btn-primary btn-xs">Contact-Us </button><br/><br/>
         <p style="font-size:10px; float: left;">Copyright © 2021  Amerigo Technology B.V.  All rights reserved.  Apple, iPhone, MacBook Pro are trademarks of Apple Inc.  All rights reserved.</p>
       </div>
       </div>
