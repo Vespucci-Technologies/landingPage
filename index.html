@@ -35,7 +35,7 @@
   <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="sticky" >
+    <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="sticky" style="-webkit-backdrop-filter: blur(15px); background:none;" >
       <div class="container">
 
         <div class="navbar-left">
@@ -49,10 +49,10 @@
           <span class="navbar-divider d-mobile-none"></span>
 
           <nav class="nav nav-navbar">
-            <a style="color:black" class="nav-link" href="#tech">Technologies</a>
-            <a style="color:black"class="nav-link" href="./docs/index.html">Docs</a>
-            <a style="color:black" class="nav-link" href="./changelog/index.html">Changelog</a>
-            <a style="color:black" class="nav-link" href="./news/index.html">Newsroom</a>
+            <a style="color:gray" class="nav-link" href="#tech">Technologies</a>
+            <a style="color:gray"class="nav-link" href="./docs/index.html">Docs</a>
+            <a style="color:gray" class="nav-link" href="./changelog/index.html">Changelog</a>
+            <a style="color:gray" class="nav-link" href="./news/index.html">Newsroom</a>
 
           </nav>
         </section>
@@ -63,44 +63,49 @@
 
 
     <!-- Header -->
-    <header id="hero" class="header text-white pt-12 pb-0" style="background-image: linear-gradient(0deg, #EFFEF4 0%, #C4E1FC 100%);" >
+    <header id="hero" class="header text-white pt-12 pb-0" style="background-image: linear-gradient(270deg, #B2C2CD 0%, #EFFEF4 100%);" >
       
-      <header class="section-header" style="margin-top:-60px; margin-bottom: 60px">
+      <header class="section-header" style="margin-top:-80px; margin-bottom: 60px">
         
         <h2  style="font-size: 42px; color: black">Get unexpected insights about your data.</h2>
-        <p style="color: #A9A9A9; font-size: 16px; margin-top: -5px;margin-bottom:-30px">Vespucci transforms data analysis, a craft process based on gut feeling into an industrialised one.</p>
-        
+        <p style="color: #909090; font-size: 16px; margin-top: -5px;">Vespucci transforms data analysis, a craft process based on gut feeling into an industrialised one.</p>
+<br/>
+        <div class="container-header">
+          <img src="assets/img/hero.png"  alt="Vespucci Advanced Techs" width="900oh" height="600" class="center">
+        </div>
+        <br/>
+
+
+<button style="background-image: linear-gradient(45deg, #545BF6, #55BAF9); border: none;margin-bottom:10px" onclick="location.href='#price'" type="button" class="btn btn-primary btn-xs">+ Get Started </button><br/><br/>
 
       </header>
-      <div class="container-header">
-        <img src="assets/img/vespucciHeroBanner.png"  alt="Vespucci Advanced Techs" width="900oh" height="600" class="center">
-      </div>
+
     </header><!-- /.header -->
     
     
     <!-- Main Content -->
     <main class="main-content">
-      <section class="section" style="background: #F1F2F7;">
+      <section class="section" style="background: #F1F2F7">
         <div class="container">
           <div class="col-md-12">
-
-            <div id="box1">
+            <div id="box1" style="background:white;">
               <header class="section-header">
-                <img id="tech" style="margin-bottom: 25px" src="assets/img/stats.png" alt="Vespucci Advanced Techs" width="100oh" height="600">
+                <img id="tech" style="margin-bottom: 25px" src="assets/img/stats.png" alt="Vespucci Advanced Techs" width="95oh" height="600">
                 <p style="color: #C0C0C0; font-size: 15px; margin-bottom: -5px">Our statistics models identify insights that you wouldn’t have thought of.</p>
-                <h2 style= font-weight: bolder;">Find what you forgot to look for.</h2>
+                <h2 style="color: black;">Find what you forgot to look for.</h2>
 
                 <p style="color: #A9A9A9; font-size: 15px">Most analytics tools ask you to specify what you’re looking for. That’s a problem, because often you’re using analytics because you’re not sure what you’re looking for ! And even if you think you do, you could be closing the door on certain behaviours, missing hidden value. That’s why we’ve designed models that highlight the elements and content in your app that reveal remarkable behaviours.</p>
               </header>
 
             
             <video width="850oh" loop autoplay muted>
+              
               <source src="assets/img/StoryFinder.webm"
               type="video/webm">
-          
+              
               <source src="assets/img/StoryFinder.mp4"
-                      type="video/mp4">
-          
+              type="video/mp4">
+              
               Sorry, your browser doesn't support embedded videos.
             </video>
           <header class="section-header">
@@ -111,17 +116,15 @@
           <div class="row gap-y text-center">
             <div class="col-md-4">
               <div id="box1" style="background: #F1F2F7;">
-                <img src="assets/img/scale.png" alt="Vespucci Advanced Techs" width="100oh" height="600">
-                <br/>
+                <img src="assets/img/scaleIcon.png" alt="Vespucci Advanced Techs" width="130oh" height="600">
                 <p style="color: black; text-align: left; font-size: 16px"><b>The first unsupervised solution that scales.</b></p>
                 <p id="boxParagraph" style="font-size: 13px">Relies on our dynamic insights and stop spending hours looking at screen recordings or sessions replay.</p>
             </div>  
            </div>
           
             <div class="col-md-4">
-              <div id="box1" style="background: #F1F2F7;">
-                <img src="assets/img/lab2.png" alt="Vespucci Advanced Techs" width="100oh" height="600">
-                <br/>
+            <div id="box1" style="background: #F1F2F7;">
+                <img src="assets/img/automateIcon.png" alt="Vespucci Advanced Techs" width="130oh" height="600">
                 <p style="color: black; text-align: left; font-size: 16px"><b>Automate your hypothesis formulation.
                   
                 </b></p>
@@ -130,8 +133,7 @@
             </div>
             <div class="col-md-4">
               <div id="box1" style="background: #F1F2F7;">
-                <img src="assets/img/privacy.png" alt="Vespucci Advanced Techs" width="100oh" height="600">
-                <br/>
+                <img src="assets/img/private.png" alt="Vespucci Advanced Techs" width="130oh" height="600">
                 <p style="color: black; text-align: left; font-size: 16px"><b>Designed Around Privacy. App Store Ready.</b></p>
                 <p id="boxParagraph" style="font-size: 13px">Vespucci helps you limit the data you need to collect, delivering an experience that fits Apple’s approach to privacy.</p>
           
@@ -140,109 +142,101 @@
             
           
           </div>
-          
-
-
-            
+        
           </div>  
-
-          
-
-         </div>
+           </div>
         </div>
       </section>
       
-    <main class="main-content">
-      <section class="section" style="background: #202328;">
-        <div class="container">
-          <div class="col-md-12" >
-
-            <div id="box1" style="background:#17181C">
-              <header class="section-header">
-                <img style="margin-bottom: 25px" src="assets/img/userProfile.png" alt="Vespucci Advanced Techs" width="100oh" height="600">
-                <p style="color: #C0C0C0; font-size: 15px; margin-bottom: -5px">Advanced profiling tools to explore how consistent your metrics are among your users
-</p>
-                <h2 style= "color: white;">A unique way to get to know your users.</h2>
-
-                <p style="color: #A9A9A9; font-size: 15px">Once you have Vespucci’s insights, you can see how consistently they appear depending on your users’ geographies, times, or technologies. For example, these visualizations have helped a meal delivery service to see that users in the south of Brussels abandoned the app after seeing negative customer reviews, while users in the city center were relatively indifferent to those reviews.</p>
-              </header>
-              <video width="850oh" loop autoplay muted>
-                <source src="assets/img/dimensions.webm"
-                type="video/webm">
-            
-                <source src="assets/img/dimensions.mp4"
-                        type="video/mp4">
-            
-                Sorry, your browser doesn't support embedded videos.
-              </video>
-              <header class="section-header">
-                <br/>
-                <p id="legendParagraph">Visualize the homogeneity of a behavior you have identified using the statistical tools built into Vespucci (e.g. users abandoning the app for a price > $79) across space through visual and accurate maps.</p></header>
+      <main class="main-content">
+        <section class="section" style="background: white">
+          <div class="container">
+            <div class="col-md-12">
+              <div id="box1" style="background:white">
+                <header class="section-header">
+                  <img style="margin-bottom: 25px" src="assets/img/userProfile.png" alt="Vespucci Advanced Techs" width="100oh" height="600">
+                  <p style="color: #C0C0C0; font-size: 15px; margin-bottom: -5px">Advanced profiling tools to explore how consistent your metrics are among your users
+                    
+                  </p>
+                  <h2 style= "color: black;">A unique way to get to know your users.</h2>
+      
+                  <p style="color: #A9A9A9; font-size: 15px">Once you have Vespucci’s insights, you can see how consistently they appear depending on your users’ geographies, times, or technologies. For example, these visualizations have helped a meal delivery service to see that users in the south of Brussels abandoned the app after seeing negative customer reviews, while users in the city center were relatively indifferent to those reviews.</p>
+                </header>
+                <video width="850oh" loop autoplay muted>
+                  <source src="assets/img/dimensions.webm"
+                  type="video/webm">
               
-              <div class="row gap-y text-center">
-                <div class="col-md-4">
-                  <div id="box1" style="background:#202328">
-                    <img src="assets/img/combine.png" alt="Vespucci Advanced Techs" width="100oh" height="600">
-                    <br/>
-                    <p style="color: white; text-align: left; font-size: 16px"><b>Complex data visualization at your fingertips.                  
-                    </b></p>
-                    <p id="boxParagraph" style="font-size: 13px">Combine multiple dimensions (Retention, Engagement, Time and More) about your users in a few clicks to reveal insights that would otherwise have been lost in your datasets.</p>
-                </div>  
-                </div>
-                <div class="col-md-4">
-                  <div id="box1" style="background:#202328">
-                    <img src="assets/img/AI.png" alt="Vespucci Advanced Techs" width="100oh" height="600">
-                    <br/>
-                    <p style="color: white; text-align: left; font-size: 16px"><b>AI-driven Data Identification & Processing.</b></p>
-                    <p id="boxParagraph" style="font-size: 13px">We use machine learning to present your raw data in forms that marketers, customers and investors understand, highlighting emotions, categories or keywords.</p>
-    
+                  <source src="assets/img/dimensions.mp4"
+                          type="video/mp4">
+              
+                  Sorry, your browser doesn't support embedded videos.
+                </video>
+                <header class="section-header">
+                  <br/>
+                  <p id="legendParagraph">Visualize the homogeneity of a behavior you have identified using the statistical tools built into Vespucci (e.g. users abandoning the app for a price > $79) across space through visual and accurate maps.</p></header>
+                
+                <div class="row gap-y text-center">
+                  <div class="col-md-4">
+                    <div id="box1" style="background:#F1F2F7">
+                      <img src="assets/img/complexIcon.png" alt="Vespucci Advanced Techs" width="130oh" height="600">
+                      <p style="color: black; text-align: left; font-size: 16px"><b>Complex data visualization at your fingertips.                  
+                      </b></p>
+                      <p id="boxParagraph" style="font-size: 13px">Combine multiple dimensions (Retention, Engagement, Time and More) about your users in a few clicks to reveal insights that would otherwise have been lost in your datasets.</p>
+                  </div>  
                   </div>
+                  <div class="col-md-4">
+                    <div id="box1" style="background:#F1F2F7">
+                      <img src="assets/img/robot.png" alt="Vespucci Advanced Techs" width="130oh" height="600">
+                      <p style="color: black; text-align: left; font-size: 16px"><b>AI-driven Data Identification & Processing.</b></p>
+                      <p id="boxParagraph" style="font-size: 13px">We use machine learning to present your raw data in forms that marketers, customers and investors understand, highlighting emotions, categories or keywords.</p>
+      
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-4">
+                    <div id="box1" style="background:#F1F2F7">
+                      <img src="assets/img/exportIcon.png" alt="Vespucci Advanced Techs" width="130oh" height="600">
+                      <p style="color: black; text-align: left; font-size: 16px"><b>Effortless integration with a new kind of SDK or Segment.</b></p>
+                      <p id="boxParagraph" style="font-size: 13px">We've designed a configuration wizard that writes the necessary code for the integration for you, seamlessly. You can also rely on your existing Segment configuration.</p>
+                  </div>  
+                 </div>
+                  
+                  
+      
                 </div>
-                
-                <div class="col-md-4">
-                  <div id="box1" style="background:#202328">
-                    <img src="assets/img/box.png" alt="Vespucci Advanced Techs" width="100oh" height="600">
-                    <br/>
-                    <p style="color: white; text-align: left; font-size: 16px"><b>Effortless integration with a new kind of SDK or Segment.</b></p>
-                    <p id="boxParagraph" style="font-size: 13px">We've designed a configuration wizard that writes the necessary code for the integration for you, seamlessly. You can also rely on your existing Segment configuration.</p>
-                </div>  
-               </div>
-                
-    
-              </div>
-    
-          </div>  
-     
-          
+      
+            </div>  
+             </div>
+          </div>
+        </section>
+      
+      
 
-         </div>
-        </div>
-      </section>
-      
-      
-      <section class="section" style="background: #17181C;">
+    <main class="main-content">
+          
+      <section id="price" class="section" style="background: #F1F2F7;">
         <div class="container">
           <div class="col-md-12" >
 
-            <div id="box1" style="background:#202328">
+            <div id="box1" style="background:white">
               <header class="section-header">
                 <img id="price" style="margin-bottom: 25px" src="assets/img/price.png" alt="Vespucci Advanced Techs" width="100oh" height="600">
                 <p style="color: #C0C0C0; font-size: 15px; margin-bottom: -5px">Unleash the value of your data.</p>
-                <h2 style= "color: white;">A technology that translates data into value.</h2>
+                <h2 style= "color: black;">A technology that translates data into value.</h2>
                 <p style="color: #A9A9A9; font-size: 15px">Start using Vespucci today. Create an account in just a few minutes to request early access to Vespucci. Our tool can be easily integrated into your mobile apps. We support most of the technologies on the market. So you can integrate Vespucci with an iOS app coded in Swift or Objective-C, an Android app coded in Java or Kotlin. We also support ReactNative or Ionic projects.</p>
               </header>
 
               <div class="row gap-y text-center">
                 <div class="col-md-4">
-                  <div id="box1" style="background: #17181C;">
+                  <div id="box1" style="background: #F1F2F7;">
                     <img src="assets/img/free.png" alt="Vespucci Advanced Techs" width="100oh" height="600" class="center">
-                    <h3 style="color: white;text-align: center;">DataLab Lite.</h3>                  
-                    <h4 style="color: #797979; text-align: center;">Start for Free.</h4>
-                    <p style="color: white; text-align: center;" id="boxParagraph">100k Monthly Data Layers.<br/></p>
+                    <h3 style="color: black;text-align: center;">DataLab Lite.</h3>                  
+                    <h4 style="color: #797979; text-align: center;">Free.</h4>
+                    <p style="color: black; text-align: center;" id="boxParagraph">100k Monthly Data Layers.<br/></p>
                     <div class="center">
                       <button style="background-image: linear-gradient(45deg, #545BF6, #55BAF9); border: none;" onclick="location.href='https://dashboard.vespuccianalytics.com/account/signup'" type="button" class="btn btn-primary btn-s">Get Started </button><br/><br/>
                     </div>
-                    <p style="color: white; text-align: center;" id="boxParagraph">Included in Vespucci DataLab S: </p>
+                    <p style="color: black; text-align: center;" id="boxParagraph">Included in Vespucci DataLab S: </p>
                     <div class="center">
     
                     <ul style="text-align:left;">
@@ -256,15 +250,15 @@
                </div>
     
                 <div class="col-md-4">
-                  <div id="box1" style="background: #17181C;">
-                    <img src="assets/img/lab.png" alt="Vespucci Advanced Techs" width="100oh" height="600" class="center">
-                    <h3 style="color: white;text-align: center;">DataLab Pro.</h3>                  
+                  <div id="box1" style="background: #F1F2F7;">
+                    <img src="assets/img/lab.png" alt="Vespucci Advanced Techs" width="100oh" height="500" class="center">
+                    <h3 style="color: black;text-align: center;">DataLab Pro.</h3>                  
                     <h4 style="color: #797979; text-align: center;">$499/mo.</h4>
-                    <p style="color: white; text-align: center;" id="boxParagraph">1M Monthly Data Layers.<br/></p>
+                    <p style="color: black; text-align: center;" id="boxParagraph">1M Monthly Data Layers.<br/></p>
                     <div class="center">
                     <button style="background-image: linear-gradient(45deg, #545BF6, #55BAF9); border: none;" onclick="location.href='https://dashboard.vespuccianalytics.com/account/signup'" type="button" class="btn btn-primary btn-s">Get Started </button><br/><br/>
                     </div>
-                    <p style="color: white; text-align: center;" id="boxParagraph">Included in DataLab Pro: </p>
+                    <p style="color: black; text-align: center;" id="boxParagraph">Included in DataLab Pro: </p>
                     <div class="center">
                     <ul style="text-align:left;">
                       <li>1M Monthly Data Layers.</li>
@@ -278,15 +272,15 @@
                 </div>
                 
                 <div class="col-md-4">
-                  <div id="box1" style="background: #17181C;">
+                  <div id="box1" style="background: #F1F2F7;">
                     <img src="assets/img/pro.png" alt="Vespucci Advanced Techs" width="100oh" height="600" class="center">
-                    <h3 style="color: white;text-align: center;">Enterprise.</h3>                  
+                    <h3 style="color: black;text-align: center;">Enterprise.</h3>                  
                     <h4 style="color: #797979; text-align: center;">Custom Volume.</h4>
-                    <p style="color: white; text-align: center;" id="boxParagraph">Custom Data Layers quota.<br/></p>
+                    <p style="color: black; text-align: center;" id="boxParagraph">Custom Data Layers quota.<br/></p>
                     <div class="center">
                       <button style="background-image: linear-gradient(45deg, #545BF6, #55BAF9); border: none;" onclick="location.href='mailto:info@amerigotechnology.com?subject=Contact Vespucci'" type="button" class="btn btn-primary btn-s">Contact Us </button><br/><br/>
                     </div>
-                    <p style="color: white; text-align: center;" id="boxParagraph">Included in Vespucci DataLab S: </p>
+                    <p style="color: black; text-align: center;" id="boxParagraph">Included in Vespucci DataLab S: </p>
                     <div class="center">
     
                     <ul style="text-align:left;">
@@ -318,7 +312,7 @@
           <div class="col-12 col-lg-12">
             <br/>
             <button style="background-image: linear-gradient(45deg, #545BF6, #55BAF9); border: none;" onclick="location.href="mailto:info@amerigotechnology.com?subject=Contact Vespucci" type="button" class="btn btn-primary btn-xs">Contact-Us </button><br/><br/>
-            <p style="font-size:10px; float: left;">Copyright © 2021 Vespucci Technologies, Inc. All rights reserved.  Apple, iPhone, MacBook Pro are trademarks of Apple Inc.  All rights reserved.</p>
+            <p style="font-size:10px; float: left;">Copyright © 2021 Vespucci Technologies, Inc. All rights reserved. |<a href="https://www.notion.so/amerigotech/Privacy-Policy-35ad2f80f74644b0a6fb20595744ccb1"> Privacy Policy</a> | <a href="./jobs/index.html"> Jobs</a></p>
           </div>
           </div>
         </div>

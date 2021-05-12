@@ -32,13 +32,13 @@
   <body data-spy="scroll" data-target=".nav-sidebar" data-offset="100">
     
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light navbar-stick-light" data-navbar="sticky">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="sticky" style="-webkit-backdrop-filter: blur(15px); background:none;" >
       <div class="container">
 
         <div class="navbar-left">
           <button class="navbar-toggler" type="button">&#9776;</button>
           <a class="navbar-brand" href="../index.html">
-            <img src="../assets/img/logo.png" alt="logo" width="130oh" height="80">
+            <img src="./img/logo.png" alt="logo" width="130oh" height="80">
           </a>
         </div>
 
@@ -46,10 +46,10 @@
           <span class="navbar-divider d-mobile-none"></span>
 
           <nav class="nav nav-navbar">
-            <a style="color:black" class="nav-link" href="../index.html">Technologies</a>
-            <a style="color:black"class="nav-link" href="#">Docs</a>
-            <a style="color:black" class="nav-link" href="../changelog/index.html">Changelog</a>
-            <a style="color:black" class="nav-link" href="../news/index.html">Newsroom</a>
+            <a style="color:gray" class="nav-link" href="../index.html">Technologies</a>
+            <a style="color:gray"class="nav-link" href="#">Docs</a>
+            <a style="color:gray" class="nav-link" href="../changelog/index.html">Changelog</a>
+            <a style="color:gray" class="nav-link" href="../news/index.html">Newsroom</a>
           </nav>
         </section>
         <button style="background-image: linear-gradient(45deg, #545BF6, #55BAF9); border: none;" onclick="location.href='http://dashboard.vespuccianalytics.com'" type="button" class="btn btn-primary btn-xs">Dashboard </button><br/><br/>
@@ -57,9 +57,9 @@
     </nav><!-- /.navbar -->
   
     <!-- Header -->
-    <header class="header text-black bg-dark pt-9 pb-5" style="background-image: linear-gradient(0deg, #EFFEF4 0%, #C4E1FC 100%);">
+    <header id="hero" class="header text-white pt-12 pb-0" style="background-image: linear-gradient(-200deg, #EFFEF4 0%, #b1c2cd 100%);" >
       <div class="container">
-        <h3>Vespucci Documentation</h3>
+        <h3 style="color:black;">Vespucci Documentation</h3>
       </div>
     </header><!-- /.header -->
 
@@ -684,7 +684,7 @@ vespucciTools.sendViewEvent(viewName:"ProductView", viewProperties:["price":pric
         <div class="row gap-y align-items-center">
           <div class="col-12 col-lg-12">
           <button style="background-image: linear-gradient(45deg, #545BF6, #55BAF9); border: none;" onclick="location.href="mailto:info@amerigotechnology.com?subject=Contact Vespucci" type="button" class="btn btn-primary btn-xs">Contact-Us </button><br/><br/>
-          <p style="font-size:10px; float: left;">Copyright © 2021 Vespucci Technologies, Inc. All rights reserved.  Apple, iPhone, MacBook Pro are trademarks of Apple Inc.  All rights reserved.</p>
+          <p style="font-size:10px; float: left;">Copyright © 2021 Vespucci Technologies, Inc. All rights reserved. |<a href="https://www.notion.so/amerigotech/Privacy-Policy-35ad2f80f74644b0a6fb20595744ccb1"> Privacy Policy</a> | <a href="../jobs/index.html"> Jobs</a></p>
           </div>
           </div>
         </div>
