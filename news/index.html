@@ -35,9 +35,10 @@
 
           <nav class="nav nav-navbar">
             <a style="color:gray" class="nav-link" href="../index.html">Technologies</a>
-            <a style="color:gray"class="nav-link" href="./docs/index.html">Docs</a>
-            <a style="color:gray" class="nav-link" href="../changelog/index.html">Changelog</a>
+            <a style="color:gray"class="nav-link" href="../docs/index.html">Docs</a>
             <a style="color:gray" class="nav-link" href="#">Newsroom</a>
+            <a style="color:gray" class="nav-link" href="../jobs/index.html">🚀 We're Hiring</a>
+
           </nav>
         </section>
         <button style="background-image: linear-gradient(45deg, #545BF6, #55BAF9); border: none;" onclick="location.href='http://dashboard.vespuccianalytics.com'" type="button" class="btn btn-primary btn-xs">Dashboard </button><br/><br/>
@@ -55,6 +56,31 @@
     <main class="main-content">
       <section class="section">
         <div class="container-sm">
+          <h2 id="Vespucci_Segment">Introducing the DataStudio.</h2>
+          <p class="text-light"><small>Published on June 17, 2021</small></p>
+          <img src="img/datastudio.png" alt="Vespucci Advanced Techs" width="950oh" height="600" style="border-radius: 5px;">
+          <br/><br/><br/>
+
+          <p>About ten days ago, we released Vespucci 1.4 with Segment support.
+            Segment is very popular in the industry because it allows to "normalize" data. This normalisation is achieved by the fact that all the data you collect through Segment can be conceptually summarised into three things; either an action, a view or an identity. This approach is very powerful because it provides a layer of abstraction that allows, for example, the design of models and tools without prior knowledge of the dataset to be analysed.</p> 
+            
+          <p>Nevertheless, Segment also has its limitations. For example, it is not uncommon for Segment users to opt for the default behaviour of automatically tracking all views. Such behaviour has two corollaries.</p>   
+          
+          <ul>
+            <li>On the one hand, automatic tracking implies the collection of undesirable elements. For example, the display of an alert. Let's imagine that a user consults view A. Then, a popup indicating a low battery appears on the screen, the user makes the popup disappear. Segment tracking is as follows: view A> popup> view A. So three views have been tracked where conceptually there is only one. That's an issue for things like user's engagement measurement.</li>
+            <li>On the other hand, the automatically tracked views do not include properties. However, it is likely that a Segment user will want to add properties to views. To do this, a new view track must be created. This results in two tracks for the same view.</li>
+            </ul>
+          
+          <p>To address some of these limitations and more, we are introducing the DataStudio. The DataStudio is an innovative interface that allows our users to prepare their data with a few clicks. Each of the distinct tracks in your Segment configuration are displayed as cards. You then have powerful options to merge two tracks together, or make them transparent.</p>   
+          
+          <p>Data processing, normalisation and governance is a major topic in data analysis. The DataStudio is the first step in a broader approach that goes far beyond Segment support. </p>   
+          
+          <p>The DataStudio is available today as part of the preview program. </p>   
+          <hr class="my-8">
+
+
+
+          
           <h2 id="Vespucci_Segment">Vespucci + Segment.</h2>
           <p class="text-light"><small>Published on June 4, 2021</small></p>
           <img src="img/blogScreen.006.png" alt="Vespucci Advanced Techs" width="950oh" height="600" style="border-radius: 5px;">
