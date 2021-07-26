@@ -123,10 +123,11 @@
                     <a class="nav-link" href="#vespucciMac">Vespucci for Mac <i class="nav-angle"></i></a>
                     <div class="nav">
                       <a class="nav-link" href="#installation">Installation</a>
-                      <a class="nav-link" href="#datasync">DataSync</a>
-                      <a class="nav-link" href="#stories">Stories</a>
+                      <a class="nav-link" href="#guided">Guided Tour</a>
+                      <a class="nav-link" href="#stories">StoryEditor</a>
                       <a class="nav-link" href="#storyfinder">StoryFinder</a>
                       <a class="nav-link" href="#dimensions">Dimensions</a>
+                      <a class="nav-link" href="#datasync">Sync Tools</a>
                     </div>
                   </li>
                 </ul>
@@ -566,12 +567,13 @@ vespucciTools.sendViewEvent(viewName:"ProductView", viewProperties:["price":pric
             |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
             !-->
             <h2 id="vespucciMac">Vespucci for Mac</h2>
-            <p class="lead-2">When we designed Vespucci, we had two constraints in mind: the first was ease of integration. We know that integrating our solution into your products can be seen a very significant non-monetary cost. We worked hard to minimise this cost as much as we could. The second constraint is the transparency of the integration. You entrust us with usage data that is considered increasingly sensitive. You no longer want to deal with black boxes. You want to know what usage data is being retrieved and where it is being sent. Thus we have designed a modular and transparent integration system. You are in the driver seat and you have a hand on key choices at each step of the integration. At the same time, we have designed the process and build virtual assistants to make this process as smooth as possible. Let’s get started !</p>
+            <p class="lead-2">This section contains information to help you get started with Vespucci. Vespucci is a native Mac app. This native approach allows us to exploit at best the resources of your computer (such as your GPU) to perform some computational operations. And no worries Vespucci can be installed in only a few clicks.</p>
             <hr class="hr-dash my-7">
 
 
             <h3 id="installation">Installation</h3>
-            <p>Vespucci runs on any Mac running macOS 11 (Big Sur) or later. Vespucci is optimised for Apple Silicon Macs and supports the latest Apple technologies.               To install Vespucci on your Mac, go to your dashboard.
+            <p>Vespucci runs on most recent Macs. Vespucci requires macOS 11.0 (BigSur) or later. Vespucci is a universal app that supports Intel Macs and that’s optimized for Apple Silicon 
+                        To install Vespucci on your Mac, go to your dashboard.
               
             </p>
             <button style="background-image: linear-gradient(45deg, #545BF6, #55BAF9); border: none;" onclick="location.href='http://dashboard.vespuccianalytics.com'" type="button" class="btn btn-primary btn-xs">Open the Dashboard</button><br/><br/>
@@ -581,35 +583,17 @@ vespucciTools.sendViewEvent(viewName:"ProductView", viewProperties:["price":pric
               <img src="img/15.png" alt="Vespucci Advanced Techs" width="850oh" height="600">
 
             <hr class="hr-dash my-7">
-
-
-            <h3 id="datasync">DataSync</h3>
+            <h3 id="guided">A Guided Tour</h3>
             
-            <p class="lead">In order to perform statistical analysis on large datasets, Vespucci replicates some information from our servers on your Mac. This information comes from your product data usage. It is constantly evolving. Therefore, you need to regularly synchronize Vespucci with our servers to keep the data on which Vespucci builds its models and analyses up to date.</p>
-            <hr class="my-6">
-            <h4>Initial configuration</h4>
-            <p>When using Vespucci on a new Mac, or if you use Vespucci after logging out, the Sync Wizard helps you specify which usage data to bring back to your Mac. Several cases are possible:</p>
-            <h4>No usage data on your Mac.</h2>
-            <p>If Vespucci does not find usage data on your Mac's hard drive, it will prompt you to build a new local database. You can choose to build this database as a replica of the usage data contained on our servers from a given date. 
-              You can also choose not to retrieve any data from our servers and create a "blank" database that will be fulfill with usage data from after the configuration.</p>
-           <img src="img/02.png" alt="Vespucci Advanced Techs" width="850oh" height="600">
+            <img src="img/guidedTour.png" alt="Vespucci Advanced Techs" width="850oh" height="600">
+            <br/><br/>
 
-            <h4>Data already exists on your Mac.</h2>
-            <p>If Vespucci finds usage data on your Mac's hard drive, it will ask you to keep it as a basis for future analysis.</p>
-            <p>You can choose to keep the pre-existing data. In this case, the data configuration wizard will prompt you to repatriate on your Mac the usage data produced after the pre-existing data. You will have the option of importing all of those data or only the data produced within a time range that you can set.</p>
-            <img src="img/03.png" alt="Vespucci Advanced Techs" width="850oh" height="600">
-            <p>You can also choose not to keep this data and set up a blank database. The latter case was explained in section "no usage data".</p>
-            <img src="img/04.png" alt="Vespucci Advanced Techs" width="850oh" height="600">
-            
-            <h4>Keep your data up-to-date.</h2>
-            <p>When using Vespucci, it is important to keep your data up to date. To retrieve all usage data generated since your last synchronization, simply click on the central item in the toolbar called "Tap to Sync Vespucci". This item also shows the date and time of your last synchronisation operation, the date and time from which the new data will be retrieved..</p>
-            <img src="img/05.png" alt="Vespucci Advanced Techs" width="850oh" height="600">
-
+            <p>How are you? Are you there? If you have followed this guide you should have Vespucci installed on your Mac. Now let's take a quick tour of the software together. We can distinguish 4 main blocks in Vespucci. The first one is the StoryEditor. <a href="#stories">The StoryEditor (1)</a>  consists of a visual editor that allows you to describe a valuable behaviour to the computer. Based on this description Vespucci will identify some of its key drivers through the StoryFinder. <a href="#storyfinder">The StoryFinder (2)</a>  is Vespucci’s second block. It’s a statistical tool designed in two parts. The first one allows you to identify the elements shaping the behavior while the second one qualifies this element by identifying the values of interest that it takes. Finally, the left column contains what we call <a href="#dimensions">Dimensions (3)</a>. The dimensions consist of socio-demographic criteria such as geographical location, language settings, retention profile, time of day,... allowing you to get a better idea of your user. Finally, the last important block of Vespucci is its <a href="#datasync">Synchronization System (4)</a>. It is him which allows us to carry out certain operations of calculations to you. That's it for this quick tour of the owner. To learn more about it, don't hesitate to click on the links associated to each of them.</p>
             <hr class="hr-dash my-7">
 
-            <h3 id="stories">Stories</h3>
+            <h3 id="stories">StoryEditor</h3>
             
-            <p class="lead">Stories are at the heart of the Vespucci experience. They allow you to describe a user behaviour that you will then visualize through dimensions (such as time, geographical location of your users, ...).</p>
+            <p class="lead">Stories are the backbone of the Vespucci experience. They allow you to describe a user behaviour that you will then visualize through dimensions (such as time, geographical location of your users, ...).</p>
             <hr class="my-6">
             <h4>What's a Data Story ?</h4>
             <i>If you develop a meal delivery app you could write the following story: users who placed an order after observing a positive customer review. You will then probably be interested in visualising the geographical areas in which such behaviour is most frequent. This is the role of dimensions. To learn more about dimensions, see the dedicated section.</i>
@@ -619,7 +603,7 @@ vespucciTools.sendViewEvent(viewName:"ProductView", viewProperties:["price":pric
             <p>To start writing your story, simply click on "Create a Story". In the Lab subscription plan, you can create up to 10 different stories. It can be very handy to have different stories available. For example, you can assign a user behaviour of interest to a story so that you can present it later, for example at a meeting.</p>
            <img src="img/06.png" alt="Vespucci Advanced Techs" width="850oh" height="600">
 
-            <h4>The Story Editor.</h2>
+            <h4>The StoryEditor.</h2>
             <p>The opening of a story initiates the story editor. The upper part of the story editor allows you to define your story as the active story, i.e. the one you will view through the dimensions. The lower part of the story editor allows you to configure your story itself.</p>
 
             <img src="img/07.png" alt="Vespucci Advanced Techs" width="850oh" height="600">
@@ -672,7 +656,29 @@ vespucciTools.sendViewEvent(viewName:"ProductView", viewProperties:["price":pric
             <p>The technological dimension allows you to tell your story according to the operating system of your users, the language of their device or the model of their terminal.</p>
             <img src="img/18.png" alt="Vespucci Advanced Techs" width="850oh" height="600">
 
+            <hr class="hr-dash my-7">
+
+            <h3 id="datasync">Synchronization System </h3>
             
+            <p class="lead">In order to perform some statistical analysis, Vespucci replicates some information from our servers on your Mac. This information comes from your product data usage. It is constantly evolving. Therefore, you need to regularly synchronize Vespucci with our servers to keep the data on which Vespucci builds its models and analyses up to date.</p>
+            <hr class="my-6">
+            <h4>Initial configuration</h4>
+            <p>When using Vespucci on a new Mac, or if you use Vespucci after logging out, the Sync Wizard helps you specify which usage data to bring back to your Mac. Several cases are possible:</p>
+            <h4>No usage data on your Mac.</h2>
+            <p>If Vespucci does not find usage data on your Mac's hard drive, it will prompt you to build a new local database. You can choose to build this database as a replica of the usage data contained on our servers from a given date. 
+              You can also choose not to retrieve any data from our servers and create a "blank" database that will be fulfill with usage data from after the configuration.</p>
+           <img src="img/02.png" alt="Vespucci Advanced Techs" width="850oh" height="600">
+
+            <h4>Data already exists on your Mac.</h2>
+            <p>If Vespucci finds usage data on your Mac's hard drive, it will ask you to keep it as a basis for future analysis.</p>
+            <p>You can choose to keep the pre-existing data. In this case, the data configuration wizard will prompt you to repatriate on your Mac the usage data produced after the pre-existing data. You will have the option of importing all of those data or only the data produced within a time range that you can set.</p>
+            <img src="img/03.png" alt="Vespucci Advanced Techs" width="850oh" height="600">
+            <p>You can also choose not to keep this data and set up a blank database. The latter case was explained in section "no usage data".</p>
+            <img src="img/04.png" alt="Vespucci Advanced Techs" width="850oh" height="600">
+            
+            <h4>Keep your data up-to-date.</h2>
+            <p>When using Vespucci, it is important to keep your data up to date. To retrieve all usage data generated since your last synchronization, simply click on the central item in the toolbar called "Tap to Sync Vespucci". This item also shows the date and time of your last synchronisation operation, the date and time from which the new data will be retrieved..</p>
+            <img src="img/05.png" alt="Vespucci Advanced Techs" width="850oh" height="600">
 
           </div>
 
