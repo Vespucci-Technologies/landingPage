@@ -57,6 +57,83 @@ video{
     padding: 35px;
 }
 
+#boxShowCase {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+	background-color: white;
+	background-clip: border-box;
+	border: 0 solid rgba(0, 0, 0, 0.125);
+	border-radius: 0.75rem; 
+	padding: 7px;
+	margin: 7px;
+
+}
+
+#boxShowCase2,#boxShowCase2 {
+	position: center;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+	background-color: white;
+	background-clip: border-box;
+	border: 0 solid rgba(0, 0, 0, 0.125);
+	border-radius: 0.75rem; 
+	padding: 15px;
+	margin: 2px;
+
+}
+
+.img-container-inline {
+	text-align: center;
+	display: block;
+ }
+
+.modal {
+	  display: none; /* Hidden by default */
+	  position: fixed; /* Stay in place */
+	  z-index: 1; /* Sit on top */
+	  padding-top: 100px; /* Location of the box */
+	  left: 0;
+	  top: 0;
+	  width: 100%; /* Full width */
+	  height: 100%; /* Full height */
+	  overflow: auto; /* Enable scroll if needed */
+	  -webkit-backdrop-filter: blur(15px);
+	  backdrop-filter: blur(15px); 
+	  border-color: #ffffff
+	}
+	
+	/* Modal Content */
+	.modal-content {
+	  background-color: #F1F2F7;
+	  margin: auto;
+	  padding: 20px;
+	  width: 60%;
+	  box-shadow:rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+	  border-radius: 0.75rem; 
+
+	}
+	
+	/* The Close Button */
+	.close,.close2 {
+	  color: #aaaaaa;
+	  float: right;
+	  font-size: 28px;
+	  font-weight: bold;
+	}
+	
+	.close:hover,
+	.close:focus,.close2:hover,
+	.close2:focus {
+	  color: #000;
+	  text-decoration: none;
+	  cursor: pointer;
+	}
+
 #box2 {
 	position: relative;
 	display: flex;
