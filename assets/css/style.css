@@ -6,8 +6,16 @@
 }
 
 h2,h4,h3,nav-link {
-	font-family: 'Source Sans Pro', serif;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 700;
 	color: black;
+}
+
+p {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 300;
+
+	color: #C0C0C0;
 }
 video{
 	margin: auto;
@@ -177,6 +185,8 @@ video{
 }
 
 #boxParagraph {
+	font-family: 'Nunito', sans-serif;
+	color: #C0C0C0;
 	text-align: left;
 	font-size: 14px;
 }
@@ -193,6 +203,8 @@ video{
 
 h4 {
 	text-align: left;
+	font-size: 17px;
+
 }
 
 .nav-link{
