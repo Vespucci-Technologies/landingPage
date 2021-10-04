@@ -5,16 +5,21 @@
 	justify-content: space-around;
 }
 
-h2,h4,h3,nav {
+h2,h4,h3,nav,ul {
 	font-family: 'Nunito', sans-serif;
 	font-weight: 700;
 	color: black;
 }
 
+ul {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 300;
+	color: #C0C0C0;
+}
+
 p {
 	font-family: 'Nunito', sans-serif;
 	font-weight: 300;
-
 	color: #C0C0C0;
 }
 video{
