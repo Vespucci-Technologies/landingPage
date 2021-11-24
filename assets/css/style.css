@@ -44,6 +44,11 @@ video{
 	margin-bottom: 30px;
 }
 
+[class*="col-"] {
+	background-clip: padding-box;
+	border: 10px solid transparent;
+}
+
 .button-navBar{
 	  border: none;
 	  color: white;
